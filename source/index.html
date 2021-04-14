@@ -2,78 +2,145 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="logo__picture" src="img/logo-mobile-full.svg" width="57" height="22" alt="Логотип турагентства">
-        </picture>
-      </a>
-      <button class="toggle toggle--open" type="button" aria-label="Переключение меню"></button>
-      <nav class="main-nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              О путешествии
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <a class="page-header__logo logo">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="logo__picture" src="img/logo-mobile-full.svg" width="57" height="22"
+                        alt="Логотип турагентства">
+                </picture>
             </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Цены
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <a class="contacts__link" href="tel:+78125556666">+7 (499) -784-684-46</a>
-    </div>
-  </header>
-  <main class="page-main page-main__form">
-    <main>
-      <section class="travel">
-        <h2 class="travel__title">Путешествие по Европе</h2>
-        <p class="travel__intro">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
-          потрясающая красота
-          природы.</p>
-      </section>
-      <section class="places">
-        <h2 class="places__title">Места посещения</h2>
-        <p class="places__intro">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
-        <ul class="places__list">
-          <li class="places__item">Греция</li>
-          <li class="places__item">Албания</li>
-          <li class="places__item">Македония</li>
-          <li class="places__item">Черногория</li>
-          <li class="places__item">Хорватия</li>
-        </ul>
-      </section>
-    </main>
-    <footer class="page-footer">
-<section class="page-footer__directions directions">
-  <ul class="directions__list">
-<li class="directions__item">Марсель</li>
-<li class="directions__item">Сардиния</li>
-<li class="directions__item">Корс</li>
-<li class="directions__item">Ним</li>
-<li class="directions__item">Палермо</li>
-<li class="directions__item">Ницца</li>
-<li class="directions__item">Монпелье</li>
-<li class="directions__item">Катания</li>
-<li class="directions__item">Монако</li>
-<li class="directions__item">Барселона</li>
-<li class="directions__item">Неаполь</li>
-<li class="directions__item">Динь-ле-Бен</li>
-<li class="directions__item">Пальма</li>
-<li class="directions__item">Рим</li>
-<li class="directions__item">Гренобль</li>
-  </ul>
-</section>
-    </footer>
+            <button class="toggle toggle--open" type="button" aria-label="Переключение меню"></button>
+            <nav class="main-nav main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">
+                            О путешествии
+                        </a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">
+                            Цены
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="contacts__link" href="tel:+78125556666">+7 (499) -784-684-46</a>
+        </div>
+    </header>
+    <main class="page-main page-main__form">
+        <main>
+            <section class="travel">
+                <h2 class="travel__title">Путешествие по Европе</h2>
+                <p class="travel__intro">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
+                    также
+                    потрясающая красота
+                    природы.</p>
+            </section>
+            <section class="places">
+                <h2 class="places__title">Места посещения</h2>
+                <p class="places__intro">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+                <ul class="places__list">
+                    <li class="places__item">Греция</li>
+                    <li class="places__item">Албания</li>
+                    <li class="places__item">Македония</li>
+                    <li class="places__item">Черногория</li>
+                    <li class="places__item">Хорватия</li>
+                </ul>
+            </section>
+            <section class="tariffs">
+                <h2 class="visually-hidden">Описание и стоимость тарифов</h2>
+                <div>
+                    <h3>Комплексный</h3>
+                    <p>$1999</p>
+                    <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+                    <ul>
+                        <li>Разработанный маршрут с гидом группы</li>
+                        <li>Перелет, трансфер и проживание в отелях</li>
+                        <li>Завтраки, ужины в отелях и ланчи на природе</li>
+                        <li>Экскурсии по удивительно красивым местам Европы</li>
+                    </ul>
+                    <a href="#">купить тур сейчас</a>
+                </div>
+                <div>
+                    <h3>Экономный</h3>
+                    <p>$1999</p>
+                    <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+                    <ul>
+                        <li>Разработанный маршрут с гидом группы</li>
+                        <li>Перелет и трансфер</li>
+                        <li>Проживание в хостелах при отелях</li>
+                        <li>Только завтраки в отелях</li>
+                        <li>Экскурсии по удивительно красивым местам Европы</li>
+                    </ul>
+                    <a href="#">купить тур сейчас</a>
+                </div>
+                <div class="tariffs__prices">
+                    <h3>Цены</h3>
+                    <p>Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
+                        потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+                    </p>
+                    <p>Свяжитесь с нами</p>
+                    <a class="contacts__tel" href="tel:+78125556666">+7 (499) -784-684-46</a>
+                </div>
+            </section>
+            <section class="feedback">
+                <h2 class="visually-hidden">Обратная связь</h2>
+                <p class="feedback__question">У Вас остались вопросы?</p>
+                <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+                <form class="feedback__form form">
+                    <fieldset class="form-fieldset">
+                        <div class="form-fieldset__wrapper">
+                            <label class="form-fieldset__label" for="tel"></label>
+                            <input class="form-fieldset__input" type="tel" name="tel" id="tel"
+                                placeholder="+7 Введите 10 цифр номера">
+                        </div>
+                        <div class="form-fieldset__wrapper">
+                            <label class="form-fieldset__label" for="email">Адрес почты</label>
+                            <input class="form-fieldset__input" type="email" id="email" name="email"
+                                placeholder="E-mail" pattern="yourname@mail.ru" required>
+                        </div>
+                    </fieldset>
+                    <button class="form__button" type="submit">Отправить</button>
+                </form>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <section class="page-footer__directions directions">
+                <ul class="directions__list">
+                    <li class="directions__item">Марсель</li>
+                    <li class="directions__item">Сардиния</li>
+                    <li class="directions__item">Корс</li>
+                    <li class="directions__item">Ним</li>
+                    <li class="directions__item">Палермо</li>
+                    <li class="directions__item">Ницца</li>
+                    <li class="directions__item">Монпелье</li>
+                    <li class="directions__item">Катания</li>
+                    <li class="directions__item">Монако</li>
+                    <li class="directions__item">Барселона</li>
+                    <li class="directions__item">Неаполь</li>
+                    <li class="directions__item">Динь-ле-Бен</li>
+                    <li class="directions__item">Пальма</li>
+                    <li class="directions__item">Рим</li>
+                    <li class="directions__item">Гренобль</li>
+                </ul>
+            </section>
+            <div class="page-footer__contacts contacts">
+                <a class="contacts__email" href="#">puteshestviemechta@gmail.ru</a>
+                <a class="contacts__tel" href="tel:+78125556666">+7 (499) -784-684-46</a>
+            </div>
+            <div class="page-footer__offer offer">
+                <p class="offer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные
+                    туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
+                    времяпрепровождением</p>
+            </div>
+        </footer>
