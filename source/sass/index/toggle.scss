@@ -1,0 +1,36 @@
+.toggle {
+  display: none;
+  position: relative;
+
+  @media (min-width: $mobile-width) {
+    @include button-reset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    background-color: $orange;
+  }
+
+  &--close {
+    display: flex;
+
+    &::after {
+      content: "";
+      width: 23px;
+      height: 2px;
+      position: absolute;
+      top: auto;
+      right: 50%;
+      transform: translate(50%, -50%);
+      background-color: $toggle-grey;
+      box-shadow: 0 10px 0 0 $toggle-grey, 0 20px 0 0 $toggle-grey;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 72px;
+    padding-bottom: 20px;
+  }
+}

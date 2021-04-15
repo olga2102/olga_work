@@ -1,0 +1,10 @@
+.page__body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $font-grey;
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0;
+}

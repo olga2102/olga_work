@@ -1,0 +1,23 @@
+.main-nav {
+  margin-right: 55px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+  font-weight: 500;
+  display: flex;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.main-nav__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $font-grey;
+}

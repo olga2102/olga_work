@@ -1,0 +1,31 @@
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__tel-link {
+  position: relative;
+  color: $font-grey;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration-line: underline;
+  padding-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
