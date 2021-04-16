@@ -1,0 +1,32 @@
+// .directions {
+//   width: 30%;
+// }
+
+.directions__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.directions__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directions__item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  color: $opacity-dark-grey;
+  width: 30%;
+  margin-right: 14px;
+  margin-bottom: 10px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+

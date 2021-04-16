@@ -1,0 +1,24 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 53px;
+}
+
+.page-footer__wrapper {
+  position: relative;
+  width: 32%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0;
+    border: 1px solid $border-grey;
+    top: 0;
+    right: 0;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}

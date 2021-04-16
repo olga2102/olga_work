@@ -1,5 +1,9 @@
 .logo {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $min-tablet-width) and  (max-width: $max-tablet-width) {
     padding: 20px;
+  }
+
+  @media (min-width: $mobile-width) {
+    padding: 15px 15px;
   }
 }

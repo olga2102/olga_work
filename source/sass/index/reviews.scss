@@ -1,0 +1,40 @@
+.reviews {
+  // min-width: 382px;
+  background-color: $basic-white;
+  padding: 30px;
+}
+
+.reviews__title {
+  position: relative;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 68px;
+    border: 0.73px solid $orange;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 28px;
+  color: $light-opacity-grey;
+  margin: 0;
+}
+
+.reviews__blockquote {
+  margin: 0;
+}
+
+.reviews__user {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 500;
+}

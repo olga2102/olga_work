@@ -2,7 +2,7 @@
   display: none;
   position: relative;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $mobile-width) and (max-width: $max-tablet-width) {
     @include button-reset;
     display: flex;
     justify-content: center;
@@ -14,22 +14,24 @@
   }
 
   &--close {
-    display: flex;
+    @media (min-width: $mobile-width) and  (max-width: $max-tablet-width) {
+      display: flex;
 
-    &::after {
-      content: "";
-      width: 23px;
-      height: 2px;
-      position: absolute;
-      top: auto;
-      right: 50%;
-      transform: translate(50%, -50%);
-      background-color: $toggle-grey;
-      box-shadow: 0 10px 0 0 $toggle-grey, 0 20px 0 0 $toggle-grey;
+      &::after {
+        content: "";
+        width: 23px;
+        height: 2px;
+        position: absolute;
+        top: 35%;
+        right: 50%;
+        transform: translate(50%, 0);
+        background-color: $toggle-grey;
+        box-shadow: 0 10px 0 0 $toggle-grey, 0 20px 0 0 $toggle-grey;
+      }
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
     width: 72px;
     padding-bottom: 20px;
   }

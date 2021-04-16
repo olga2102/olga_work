@@ -1,0 +1,44 @@
+.places__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0;
+}
+
+.places__intro {
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.places__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.places__item {
+  position: relative;
+  width: 330px;
+  height: 430px;
+  background-image: url("../img/greece.jpg");
+  background-repeat: no-repeat;
+}
+
+// .places__item:not(:last-child) {
+//   margin-right: 60px;
+// }
+
+.places__item-name {
+  position: absolute;
+  display: inline;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  background-color: $basic-white;
+  margin: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

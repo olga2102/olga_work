@@ -1,0 +1,52 @@
+.travel {
+  background-image: url("../img/background-desktop.jpg");
+  width: 100%;
+  height: 860px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.travel__wrapper {
+  width: 475px;
+  padding: 0 100px 0 20px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 210px;
+}
+
+.travel__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: $basic-white;
+  margin: 0;
+}
+
+.travel__intro {
+  font-size: 16px;
+  line-height: 170%;
+  color: $basic-white;
+}
+
+.travel__link {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $basic-white;
+  text-transform: uppercase;
+  background-color: $orange;
+  padding: 30px 0 30px 35px;
+  margin-right: 40px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    right: 30px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
