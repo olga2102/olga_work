@@ -15,6 +15,29 @@
     border: 0.73px solid $orange;
     bottom: 0;
     left: 0;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 150%;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.places__title-break {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -24,6 +47,17 @@
   opacity: 0.7;
   margin: 0;
   margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .places__list {
@@ -35,9 +69,12 @@
 
 .places__item {
   position: relative;
+  min-width: 288px;
+  max-width: 350px;
   width: 30%;
   height: 430px;
   background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 60px;
 
   &--greece {
@@ -59,6 +96,16 @@
   &--albania {
     background-image: url("../img/albania.jpg");
   }
+
+  @media (max-width: $tablet-width) {
+    width: 45%;
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 // .places__item:not(:nth-child(3n)) {
@@ -67,7 +114,9 @@
 
 .places__item-name {
   position: absolute;
+  min-width: 215px;
   display: inline;
+  text-align: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -76,4 +125,11 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
+  padding: 15px 0;
+}
+
+.places__intro-break {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

@@ -1,7 +1,7 @@
 .main-nav {
   margin-right: 55px;
 
-  @media (min-width: $mobile-width) and  (max-width: $max-tablet-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }

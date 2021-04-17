@@ -14,7 +14,7 @@
 }
 
 .page-header__tel-link {
-  position: relative;
+  display: flex;
   color: $font-grey;
   font-size: 18px;
   line-height: 32px;
@@ -22,16 +22,13 @@
   padding-left: 30px;
   padding-right: 20px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/phone.svg");
-    left: 0;
-  }
-
-  @media (min-width: $mobile-width) and  (max-width: $max-tablet-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.page-header__pic {
+  stroke: $dark-grey;
+  fill: none;
+  margin-right: 10px;
 }

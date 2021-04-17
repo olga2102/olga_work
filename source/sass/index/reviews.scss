@@ -1,5 +1,6 @@
 .reviews {
-  width: 38%;
+  // width: 38%;
+  width: 382px;
   background-color: $basic-white;
   padding: 30px;
   height: fit-content;
@@ -11,6 +12,7 @@
   font-size: 30px;
   line-height: 37px;
   margin: 0;
+  padding-bottom: 10px;
 
   &::after {
     position: absolute;
@@ -27,6 +29,8 @@
   line-height: 28px;
   color: $light-opacity-grey;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 
 .reviews__blockquote {
@@ -34,8 +38,23 @@
 }
 
 .reviews__user {
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
   font-weight: 500;
+  padding-left: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-image: url("../img/vlada.jpg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 }

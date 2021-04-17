@@ -29,6 +29,26 @@
       transform: translate(-25%, 0);
     }
   }
+
+  &--greece::after {
+    background-image: url("../img/greece-review.jpg");
+  }
+
+  &--albania::after {
+    background-image: url("../img/greece-review.jpg");
+  }
+
+  &--macedonia::after {
+    background-image: url("../img/macedonia-review.jpg");
+  }
+
+  &--croatia::after {
+    background-image: url("../img/croatia-review.jpg");
+  }
+
+  &--montenegro::after {
+    background-image: url("../img/montenegro-review.jpg");
+  }
 }
 
 .country__title {
@@ -36,6 +56,12 @@
   font-size: 55px;
   line-height: 90px;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+  }
 }
 
 .country__text {

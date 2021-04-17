@@ -1,10 +1,39 @@
 .travel {
-  background-image: url("../img/background-desktop.jpg");
-  width: 100%;
-  height: 860px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  min-height: 860px;
+  // background-image: url("../img/background-desktop.jpg");
+  // width: 100%;
+  // height: 860px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   margin-bottom: 200px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/background-desktop.jpg");
+    width: 100%;
+    height: 860px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @media (max-width: $tablet-width) {
+      height: 344px;
+    }
+
+
+    @media (max-width: $mobile-width) {
+      height: 235px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 344px;
+    margin-bottom: 80px;
+  }
 }
 
 .travel__wrapper {
@@ -13,6 +42,14 @@
   margin-left: auto;
   margin-right: 0;
   padding-top: 210px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 468px;
+    width: auto;
+    padding: 60px 0;
+  }
 }
 
 .travel__title {
@@ -21,12 +58,34 @@
   line-height: 80px;
   color: $basic-white;
   margin: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 145px;
+  }
 }
 
 .travel__intro {
   font-size: 16px;
   line-height: 170%;
   color: $basic-white;
+  margin: 0;
+  margin-bottom: 45px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    color: $font-grey;
+    padding: 0 15px;
+  }
 }
 
 .travel__link {
@@ -49,5 +108,11 @@
     right: 30px;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 15px;
+    text-align: left;
+    padding: 18px 0 18px 40px;
   }
 }

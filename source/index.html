@@ -32,7 +32,11 @@
             </li>
           </ul>
         </nav>
-        <a class="page-header__tel-link" href="tel:+78125556666">+7 (499) -784-684-46</a>
+        <a class="page-header__tel-link" href="tel:+78125556666">
+          <svg class="page-header__pic" width="30" height="30">
+            <use xlink:href="sprite.svg#phone"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</a></span>
       </div>
     </div>
   </header>
@@ -80,7 +84,7 @@
         </ul>
       </div>
       <div class="container">
-        <div class="country country--current">
+        <div class="country country--greece country--current">
           <h2 class="country__title">Греция</h2>
           <div class="country__container">
             <div class="country__wrapper">
@@ -106,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="country">
+        <div class="country country--albania">
           <h2 class="country__title">Албания</h2>
           <div class="country__wrapper">
             <p class="country__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и
@@ -125,7 +129,7 @@
             </blockquote>
           </div>
         </div>
-        <div class="country">
+        <div class="country country--macedonia">
           <h2 class="country__title">Македония</h2>
           <div class="country__wrapper">
             <p class="country__text">В Македонии нашей целью будет посетить Палаошник, который расположился в
@@ -144,7 +148,7 @@
             </blockquote>
           </div>
         </div>
-        <div class="country">
+        <div class="country country--montenegro">
           <h2 class="country__title">Черногория</h2>
           <div class="country__wrapper">
             <p class="country__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в
@@ -162,7 +166,7 @@
             </blockquote>
           </div>
         </div>
-        <div class="country">
+        <div class="country country--croatia">
           <h2 class="country__title">Хорватия</h2>
           <div class="country__wrapper">
             <p class="country__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир
@@ -184,7 +188,7 @@
       </div>
     </section>
     </section>
-    <section class="tariffs container">
+    <!-- <section class="tariffs container">
       <h2 class="visually-hidden">Описание и стоимость тарифов</h2>
       <div class="tariffs__wrapper tariffs__wrapper--price">
         <h3 class="tariffs__title">Цены</h3>
@@ -201,11 +205,36 @@
       </div>
         <p class="offer-tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
         <ul class="offer-tariff__list">
-          <li class="offer-tariff__item">Разработанный маршрут с гидом группы</li>
-          <li class="offer-tariff__item">Перелет и трансфер</li>
-          <li class="offer-tariff__item">Проживание в хостелах при отелях</li>
-          <li class="offer-tariff__item">Только завтраки в отелях</li>
-          <li class="offer-tariff__item">Экскурсии по удивительно красивым местам Европы</li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="22" height="22">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Разработанный маршрут с гидом группы</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Перелет и трансфер</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Проживание в хостелах при отелях</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Только завтраки в отелях</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
+          </li>
         </ul>
         <a class="offer-tariff__link" href="#">купить тур сейчас</a>
       </div>
@@ -214,12 +243,32 @@
         <h4 class="offer-tariff__title offer-tariff__title--current">Комплексный</h3>
         <p class="offer-tariff__price offer-tariff__price--current">$1999</p>
       </div>
-        <p class="offer-tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <p class="offer-tariff__text offer-tariff__text--current">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
         <ul class="offer-tariff__list">
-          <li class="offer-tariff__item">Разработанный маршрут с гидом группы</li>
-          <li class="offer-tariff__item">Перелет, трансфер и проживание в отелях</li>
-          <li class="offer-tariff__item">Завтраки, ужины в отелях и ланчи на природе</li>
-          <li class="offer-tariff__item">Экскурсии по удивительно красивым местам Европы</li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Разработанный маршрут с гидом группы</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Перелет, трансфер и проживание в отелях</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Завтраки, ужины в отелях и ланчи на природе</p>
+          </li>
+          <li class="offer-tariff__item">
+            <svg class="offer-tariff__mark" width="12" height="12">
+              <use xlink:href="sprite.svg#mark"></use>
+            </svg>
+            <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
+          </li>
         </ul>
         <a class="offer-tariff__link" href="#">купить тур сейчас</a>
       </div>
@@ -244,9 +293,9 @@
         <button class="form__button" type="submit">Отправить</button>
       </form>
     </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="page-footer container">
+  <!-- <footer class="page-footer container">
     <section class="page-footer__wrapper directions">
       <h4 class="directions__title">Следующие путешествия</h4>
       <ul class="directions__list">
@@ -278,4 +327,4 @@
         туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
         времяпрепровождением</p>
     </div>
-  </footer>
+  </footer> -->
