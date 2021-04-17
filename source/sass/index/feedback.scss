@@ -1,0 +1,41 @@
+.feedback {
+  position: relative;
+  min-height: 455px;
+  padding-top: 70px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 844px;
+    height: 455px;
+    top: 0;
+    background-image: url("../img/background-qa-desktop.jpg");
+    z-index: -1;
+  }
+}
+
+.feedback__wrapper {
+  background-color: $basic-white;
+  width: 50%;
+  min-height: 315px;
+  box-shadow: 0 4px 30px $shadow-grey;
+  border-radius: 5px;
+  padding: 3%;
+  margin-left: auto;
+}
+
+.feedback__question {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.feedback__text {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0;
+}

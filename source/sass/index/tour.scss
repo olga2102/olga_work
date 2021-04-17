@@ -1,9 +1,16 @@
+.tour {
+  margin-bottom: 120px;
+}
+
 .tour__list {
   @include list-reset;
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 900px;
+  padding-bottom: 15px;
+  margin-bottom: 80px;
 
   &::after {
     position: absolute;

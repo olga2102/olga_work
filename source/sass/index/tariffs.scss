@@ -1,0 +1,65 @@
+.tariffs {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.tariffs__wrapper {
+  padding: 40px 20px;
+
+  &--price {
+    width: 30%;
+  }
+}
+
+.tariffs__title {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border: 0.73px solid $orange;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.tariffs__text {
+  font-size: 16px;
+  line-height: 170%;
+  color: $light-opacity-grey;
+  margin: 0;
+}
+
+.tariffs__connection {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  margin: 0;
+}
+
+.tariffs__tel {
+  position: relative;
+  font-size: 20px;
+  line-height: 32px;
+  color: $basic-black;
+  text-align: center;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    left: 0;
+  }
+}

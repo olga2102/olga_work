@@ -1,8 +1,21 @@
 .places__title {
+  display: inline-block;
+  position: relative;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
   margin: 0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    border: 0.73px solid $orange;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .places__intro {
@@ -10,23 +23,45 @@
   line-height: 28px;
   opacity: 0.7;
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .places__list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .places__item {
   position: relative;
-  width: 330px;
+  width: 30%;
   height: 430px;
-  background-image: url("../img/greece.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 60px;
+
+  &--greece {
+    background-image: url("../img/greece.jpg");
+  }
+
+  &--croatia {
+    background-image: url("../img/croatia.jpg");
+  }
+
+  &--montenegro {
+    background-image: url("../img/montenegro.jpg");
+  }
+
+  &--macedonia {
+    background-image: url("../img/macedonia.jpg");
+  }
+
+  &--albania {
+    background-image: url("../img/albania.jpg");
+  }
 }
 
-// .places__item:not(:last-child) {
+// .places__item:not(:nth-child(3n)) {
 //   margin-right: 60px;
 // }
 

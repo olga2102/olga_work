@@ -52,19 +52,19 @@
       <p class="places__intro">Вы можете выбрать полный тур или <br class="places__intro-break">частичный, с посещением
         первых 3 мест</p>
       <ul class="places__list">
-        <li class="places__item">
+        <li class="places__item places__item--greece">
           <p class="places__item-name">Греция</p>
         </li>
-        <li class="places__item">
+        <li class="places__item places__item--albania">
           <p class="places__item-name">Албания</p>
         </li>
-        <li class="places__item">
+        <li class="places__item places__item--macedonia">
           <p class="places__item-name">Македония</p>
         </li>
-        <li class="places__item">
+        <li class="places__item places__item--montenegro">
           <p class="places__item-name">Черногория</p>
         </li>
-        <li class="places__item">
+        <li class="places__item places__item--croatia">
           <p class="places__item-name">Хорватия</p>
         </li>
       </ul>
@@ -184,60 +184,66 @@
       </div>
     </section>
     </section>
-    <section class="tariffs">
+    <section class="tariffs container">
       <h2 class="visually-hidden">Описание и стоимость тарифов</h2>
-      <div>
-        <h3>Комплексный</h3>
-        <p>$1999</p>
-        <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-        <ul>
-          <li>Разработанный маршрут с гидом группы</li>
-          <li>Перелет, трансфер и проживание в отелях</li>
-          <li>Завтраки, ужины в отелях и ланчи на природе</li>
-          <li>Экскурсии по удивительно красивым местам Европы</li>
-        </ul>
-        <a href="#">купить тур сейчас</a>
-      </div>
-      <div>
-        <h3>Экономный</h3>
-        <p>$1999</p>
-        <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-        <ul>
-          <li>Разработанный маршрут с гидом группы</li>
-          <li>Перелет и трансфер</li>
-          <li>Проживание в хостелах при отелях</li>
-          <li>Только завтраки в отелях</li>
-          <li>Экскурсии по удивительно красивым местам Европы</li>
-        </ul>
-        <a href="#">купить тур сейчас</a>
-      </div>
-      <div class="tariffs__prices">
-        <h3>Цены</h3>
-        <p>Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
+      <div class="tariffs__wrapper tariffs__wrapper--price">
+        <h3 class="tariffs__title">Цены</h3>
+        <p class="tariffs__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
           потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
         </p>
-        <p>Свяжитесь с нами</p>
-        <a class="contacts__tel" href="tel:+78125556666">+7 (499) -784-684-46</a>
+        <p class="tariffs__connection">Свяжитесь с нами</p>
+        <a class="tariffs__tel" href="tel:+78125556666">+7 (499) -784-684-46</a>
+      </div>
+      <div class="tariffs__wrapper offer-tariff">
+        <div class="offer-tariff__wrapper">
+        <h4 class="offer-tariff__title">Экономный</h3>
+        <p class="offer-tariff__price">$1999</p>
+      </div>
+        <p class="offer-tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="offer-tariff__list">
+          <li class="offer-tariff__item">Разработанный маршрут с гидом группы</li>
+          <li class="offer-tariff__item">Перелет и трансфер</li>
+          <li class="offer-tariff__item">Проживание в хостелах при отелях</li>
+          <li class="offer-tariff__item">Только завтраки в отелях</li>
+          <li class="offer-tariff__item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <a class="offer-tariff__link" href="#">купить тур сейчас</a>
+      </div>
+      <div class="tariffs__wrapper offer-tariff offer-tariff--current">
+        <div class="offer-tariff__wrapper">
+        <h4 class="offer-tariff__title offer-tariff__title--current">Комплексный</h3>
+        <p class="offer-tariff__price offer-tariff__price--current">$1999</p>
+      </div>
+        <p class="offer-tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="offer-tariff__list">
+          <li class="offer-tariff__item">Разработанный маршрут с гидом группы</li>
+          <li class="offer-tariff__item">Перелет, трансфер и проживание в отелях</li>
+          <li class="offer-tariff__item">Завтраки, ужины в отелях и ланчи на природе</li>
+          <li class="offer-tariff__item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <a class="offer-tariff__link" href="#">купить тур сейчас</a>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback container">
       <h2 class="visually-hidden">Обратная связь</h2>
+      <div class="feedback__wrapper">
       <p class="feedback__question">У Вас остались вопросы?</p>
       <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
       <form class="feedback__form form">
         <fieldset class="form-fieldset">
           <div class="form-fieldset__wrapper">
-            <label class="form-fieldset__label" for="tel"></label>
+            <label class="form-fieldset__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
             <input class="form-fieldset__input" type="tel" name="tel" id="tel" placeholder="+7 Введите 10 цифр номера">
           </div>
           <div class="form-fieldset__wrapper">
-            <label class="form-fieldset__label" for="email">Адрес почты</label>
+            <label class="form-fieldset__label" for="email" aria-label="Поле для ввода электронной почты"></label>
             <input class="form-fieldset__input" type="email" id="email" name="email" placeholder="E-mail"
               pattern="yourname@mail.ru" required>
           </div>
         </fieldset>
         <button class="form__button" type="submit">Отправить</button>
       </form>
+    </div>
     </section>
   </main>
   <footer class="page-footer container">

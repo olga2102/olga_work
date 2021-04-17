@@ -4,6 +4,7 @@
   &--current {
     display: block;
     position: relative;
+    min-height: 596px;
 
     &::before {
       position: absolute;
@@ -12,7 +13,20 @@
       height: 1089px;
       background-image: url("../img/map.png");
       background-repeat: no-repeat;
+      z-index: -2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 430px;
+      height: 596px;
+      background-image: url("../img/greece-review.jpg");
+      background-repeat: no-repeat;
       z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translate(-25%, 0);
     }
   }
 }
@@ -32,6 +46,7 @@
   padding-top: 30px;
   padding-left: 5px;
   margin-bottom: 50px;
+  padding-right: 7px;
 }
 
 .country__link {
