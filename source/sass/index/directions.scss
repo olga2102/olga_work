@@ -1,6 +1,14 @@
-// .directions {
-//   width: 30%;
-// }
+.directions {
+  @media (max-width: $tablet-width) {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 
 .directions__title {
   font-weight: 600;
@@ -8,25 +16,40 @@
   line-height: 32px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .directions__list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .directions__item {
-  display: inline-block;
   font-size: 14px;
   line-height: 17px;
   color: $opacity-dark-grey;
-  width: 30%;
-  margin-right: 14px;
   margin-bottom: 10px;
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+.cities-directions__list {
+  @include list-reset;
+  width: 32%;
+
+  @media (max-width: $mobile-width) {
+    width: 50%;
   }
 }
 

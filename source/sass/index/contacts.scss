@@ -1,6 +1,16 @@
 .contacts {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .contacts__link {
@@ -10,26 +20,9 @@
   color: $orange;
   text-decoration-line: underline;
   margin-bottom: 20px;
-  padding-left: 40px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-  }
-
-  &--tel::before {
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/phone.svg");
-  }
-
-  &--email::before {
-    width: 26px;
-    height: 20px;
-    background-image: url("../img/mail.svg");
-  }
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .contacts__title {

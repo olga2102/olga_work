@@ -38,6 +38,10 @@
         transform: translate(-50%, 0);
       }
     }
+
+    @media (max-width: $tablet-width) {
+      margin-top: 50px;
+    }
   }
 
   &--greece::after {
@@ -47,6 +51,13 @@
       background-image: url("../img/greece-review-tablet.jpg");
       width: 768px;
       height: 415px;
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/greece.jpg");
+      width: 320px;
+      height: 415px;
+      bottom: 70px;
     }
   }
 
@@ -77,6 +88,10 @@
     font-size: 30px;
     line-height: 150%;
     text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
   }
 }
 

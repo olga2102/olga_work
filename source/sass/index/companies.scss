@@ -1,0 +1,33 @@
+.companies {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 0;
+      width: 100%;
+      border: 1px solid $border-grey;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.companies__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.companies__text {
+  font-size: 14px;
+  line-height: 170%;
+  color: $opacity-dark-grey;
+  margin: 0;
+}

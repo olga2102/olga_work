@@ -3,6 +3,15 @@
   justify-content: space-between;
   padding-bottom: 53px;
   padding-top: 15px;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 25px;
+  }
 }
 
 .page-footer__wrapper {
@@ -17,9 +26,53 @@
     border: 1px solid $border-grey;
     top: 0;
     right: 0;
+
+    @media (max-width: $tablet-width) {
+      right: auto;
+      left: 92%;
+    }
   }
 
   &:last-child::after {
     display: none;
+  }
+
+  &--contacts::after {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--directions::after {
+    @media (max-width: $mobile-width) {
+      height: 0;
+      width: 100%;
+      bottom: 0;
+      top: auto;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+.page-footer__pic {
+  stroke: $border-grey;
+  fill: none;
+  margin-right: 15px;
+}
+
+.page-footer__mail {
+  &--address {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  &--word {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
   }
 }

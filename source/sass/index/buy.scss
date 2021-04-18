@@ -1,0 +1,31 @@
+.buy {
+  position: relative;
+  width: 728px;
+  min-height: 444px;
+  background-color: $light-pink;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 338px;
+    height: 444px;
+    left: 0;
+    top: 0;
+    background-image: url("../img/sea.jpg");
+  }
+}
+
+.buy__wrapper {
+  width: 390px;
+  margin-left: auto;
+  padding: 72px 60px;
+}
+
+.buy__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}

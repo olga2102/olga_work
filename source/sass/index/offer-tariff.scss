@@ -1,12 +1,24 @@
 .offer-tariff {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 49%;
   border: 1px solid $opacity-grey;
   border-radius: 6px;
+  padding: 40px 18px;
+  justify-content: space-between;
 
   &--current {
     border: 3px solid $orange;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 40%;
+    padding: 30px 20px 0 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -33,6 +45,10 @@
   &--current {
     color: $orange;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .offer-tariff__text {
@@ -56,12 +72,26 @@
     border: 1px solid $orange;
     opacity: 0.5;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .offer-tariff__list {
   @include list-reset;
   margin-bottom: 54px;
   padding-top: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .offer-tariff__item {
@@ -70,6 +100,18 @@
   font-size: 16px;
   line-height: 32px;
   padding-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .offer-tariff__link {
@@ -89,6 +131,13 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 }
 
 .offer-tariff__advantage {
@@ -96,7 +145,7 @@
   margin-left: 8px;
 }
 
-.offer-tariff__mark {
-  width: 12px;
-  height: 12px;
-}
+// .offer-tariff__mark {
+//   width: 12px;
+//   height: 12px;
+// }

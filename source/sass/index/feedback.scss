@@ -2,7 +2,7 @@
   position: relative;
   min-height: 455px;
   padding-top: 70px;
-  margin-bottom: 145px;
+  margin-bottom: 135px;
 
   &::before {
     position: absolute;
@@ -10,8 +10,28 @@
     width: 844px;
     height: 455px;
     top: 0;
+    background-color: $light-pink;
     background-image: url("../img/background-qa-desktop.jpg");
     z-index: -1;
+
+    @media (max-width: $tablet-width) {
+      width: 768px;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+      background-color: $light-pink;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-color: $light-pink;
+    padding-top: 50px;
+    min-height: 441px;
   }
 }
 
@@ -19,10 +39,23 @@
   background-color: $basic-white;
   width: 50%;
   min-height: 315px;
-  box-shadow: 0 4px 30px $shadow-grey;
   border-radius: 5px;
   padding: 3%;
   margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    padding: 7%;
+    margin: 0 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-color: $light-pink;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .feedback__question {

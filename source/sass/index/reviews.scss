@@ -5,9 +5,10 @@
   padding: 30px;
   height: fit-content;
 
-  // @media (max-width: $tablet-width) {
-  //   margin-top: 30px;
-  // }
+  @media (max-width: $mobile-width) {
+    width: 268px;
+    min-height: 431px;
+  }
 }
 
 .reviews__title {

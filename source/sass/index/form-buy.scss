@@ -1,0 +1,80 @@
+.buy {
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.form-buy__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-buy__input {
+  font-size: 14px;
+  line-height: 17px;
+  color: $input-color;
+  width: 100%;
+  border: 1px solid $opacity-grey;
+  padding: 15px 0 15px 10px;
+}
+
+.form-buy__wrapper {
+  margin-bottom: 20px;
+}
+
+.form-buy__button {
+  @include button-reset;
+  display: block;
+  min-width: 176px;
+  width: 30%;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $orange;
+  padding: 18px 0;
+  margin: 0 auto;
+}
+
+.buy__button {
+  @include button-reset;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 22px;
+  height: 22px;
+  margin-right: 24px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  right: 0;
+  top: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: $close-color;
+    right: 0;
+    top: 50%;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
