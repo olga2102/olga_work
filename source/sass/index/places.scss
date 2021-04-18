@@ -71,18 +71,14 @@
   position: relative;
   min-width: 288px;
   max-width: 350px;
-  width: 30%;
+  width: 29%;
   height: 430px;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 60px;
 
   &:not(:last-child) {
-    margin-right: 48px;
-  }
-
-  &:nth-child(3n) {
-    margin-right: 0;
+    margin-right: 4%;
   }
 
   &:last-child {
@@ -91,6 +87,11 @@
     @media (max-width: $tablet-width) {
       margin-left: 0;
     }
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   &--greece {
