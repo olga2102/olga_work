@@ -20,6 +20,11 @@
     border: 1px solid $opacity-grey;
     bottom: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    overflow: hidden;
+  }
 }
 
 .tour__item {
@@ -30,6 +35,10 @@
 
   &--current {
     color: $orange;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 99px;
   }
 }
 

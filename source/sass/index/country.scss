@@ -14,6 +14,10 @@
       background-image: url("../img/map.png");
       background-repeat: no-repeat;
       z-index: -2;
+
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
     }
 
     &::after {
@@ -21,17 +25,28 @@
       content: "";
       width: 430px;
       height: 596px;
-      background-image: url("../img/greece-review.jpg");
       background-repeat: no-repeat;
       z-index: -1;
       top: 0;
       left: 50%;
       transform: translate(-25%, 0);
+
+      @media (max-width: $tablet-width) {
+        bottom: 0;
+        left: 0;
+        top: auto;
+      }
     }
   }
 
   &--greece::after {
     background-image: url("../img/greece-review.jpg");
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/greece-review-tablet.jpg");
+      width: 768px;
+      height: 415px;
+    }
   }
 
   &--albania::after {
@@ -73,6 +88,10 @@
   padding-left: 5px;
   margin-bottom: 50px;
   padding-right: 7px;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .country__link {
@@ -83,14 +102,32 @@
   text-transform: uppercase;
   padding: 30px 58px;
   background-color: $orange;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 17px 58px;
+  }
 }
 
 .country__container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .country__wrapper {
   width: 40%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }

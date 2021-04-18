@@ -64,7 +64,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .places__item {
@@ -76,6 +76,22 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 60px;
+
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-left: 120px;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+    }
+  }
 
   &--greece {
     background-image: url("../img/greece.jpg");
@@ -98,13 +114,26 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 45%;
+    width: 40%;
     margin-bottom: 19px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-bottom: 35px;
+    margin-right: 0;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -133,3 +162,8 @@
     display: none;
   }
 }
+
+// .places__wrapper {
+//   display: flex;
+//   justify-content: center;
+// }
