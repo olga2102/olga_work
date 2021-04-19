@@ -4,7 +4,7 @@
 
   @media (max-width: $tablet-width) {
     @include button-reset;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -15,7 +15,7 @@
 
   &--close {
     @media (max-width: $tablet-width) {
-      display: flex;
+      // display: flex;
 
       &::after {
         content: "";

@@ -3,6 +3,7 @@
   width: 728px;
   min-height: 444px;
   background-color: $light-pink;
+  margin: 0 auto;
 
   &::before {
     position: absolute;
@@ -12,6 +13,18 @@
     left: 0;
     top: 0;
     background-image: url("../img/sea.jpg");
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $basic-white;
+    min-height: 568px;
   }
 }
 
@@ -19,6 +32,11 @@
   width: 390px;
   margin-left: auto;
   padding: 72px 60px;
+
+  @media (max-width: $mobile-width) {
+    padding: 100px 15px;
+    width: 100%;
+  }
 }
 
 .buy__title {

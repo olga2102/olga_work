@@ -56,23 +56,24 @@
       <p class="places__intro">Вы можете выбрать полный тур или <br class="places__intro-break">частичный, с посещением
         первых 3 мест</p>
       <div class="places__wrapper">
-        <ul class="places__list">
-          <li class="places__item places__item--greece">
-            <p class="places__item-name">Греция</p>
-          </li>
-          <li class="places__item places__item--albania">
+        <div class="places__list">
+          <a class="places__item places__item--greece" href="#">
+            <!-- <button class="" type="button"> -->
+              <p class="places__item-name">Греция</p>
+          </a>
+          <a class="places__item places__item--albania">
             <p class="places__item-name">Албания</p>
-          </li>
-          <li class="places__item places__item--macedonia">
+          </a>
+          <a class="places__item places__item--macedonia">
             <p class="places__item-name">Македония</p>
-          </li>
-          <li class="places__item places__item--montenegro">
+          </a>
+          <a class="places__item places__item--montenegro">
             <p class="places__item-name">Черногория</p>
-          </li>
-          <li class="places__item places__item--croatia">
+          </a>
+          <a class="places__item places__item--croatia">
             <p class="places__item-name">Хорватия</p>
-          </li>
-        </ul>
+          </a>
+        </div>
       </div>
     </section>
     <section class="tour">
@@ -291,7 +292,7 @@
               <div class="form-fieldset__wrapper">
                 <label class="form-fieldset__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
                 <input class="form-fieldset__input" type="tel" name="tel" id="tel"
-                  placeholder="+7 Введите 10 цифр номера">
+                  placeholder="+7 Введите 10 цифр номера" pattern="+7-[0-9]{3}-[0-9]{2}">
               </div>
               <div class="form-fieldset__wrapper">
                 <label class="form-fieldset__label" for="email" aria-label="Поле для ввода электронной почты"></label>
@@ -324,22 +325,22 @@
           <li class="directions__item">Рим</li>
         </ul>
         <ul class="cities-directions__list">
-        <li class="directions__item">Корс</li>
-        <li class="directions__item">Ницца</li>
-        <li class="directions__item">Монако</li>
-        <li class="directions__item">Динь-ле-Бен</li>
-        <li class="directions__item">Гренобль</li>
+          <li class="directions__item">Корс</li>
+          <li class="directions__item">Ницца</li>
+          <li class="directions__item">Монако</li>
+          <li class="directions__item">Динь-ле-Бен</li>
+          <li class="directions__item">Гренобль</li>
         </ul>
       </div>
     </section>
     <div class="page-footer__wrapper page-footer__wrapper--contacts contacts">
       <h4 class="contacts__title">Наши контакты</h4>
       <a class="contacts__link contacts__link--email" href="#">
-      <svg class="page-footer__pic" width="26" height="20">
-        <use xlink:href="sprite.svg#mail"></use>
-      </svg>
-      <span class="page-footer__mail page-footer__mail--address">puteshestviemechta@gmail.ru</span>
-      <span class="page-footer__mail page-footer__mail--word">Почта</span>
+        <svg class="page-footer__pic" width="26" height="20">
+          <use xlink:href="sprite.svg#mail"></use>
+        </svg>
+        <span class="page-footer__mail page-footer__mail--address">puteshestviemechta@gmail.ru</span>
+        <span class="page-footer__mail page-footer__mail--word">Почта</span>
       </a>
       <a class="contacts__link contacts__link--tel" href="tel:+78125556666">
         <svg class="page-footer__pic" width="30" height="30">
@@ -359,21 +360,26 @@
   <div class="buy buy--close">
     <button class="buy__button close-button"></button>
     <div class="buy__wrapper">
-    <p class="buy__title">Купить тур</p>
-    <form class="buy__form form-buy">
-      <fieldset class="form-buy__fieldset">
-        <div class="form-buy__wrapper">
-          <label class="form-buy__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
-          <input class="form-buy__input" type="tel" name="tel" id="tel"
-            placeholder="+7 Введите 10 цифр номера">
-        </div>
-        <div class="form-buy__wrapper">
-          <label class="form-buy__label" for="email" aria-label="Поле для ввода электронной почты"></label>
-          <input class="form-buy__input" type="email" id="email" name="email" placeholder="E-mail"
-            pattern="yourname@mail.ru" required>
-        </div>
-      </fieldset>
-      <button class="form-buy__button" type="submit">Отправить</button>
-    </form>
+      <p class="buy__title">Купить тур</p>
+      <form class="buy__form form-buy">
+        <fieldset class="form-buy__fieldset">
+          <div class="form-buy__wrapper">
+            <label class="form-buy__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
+            <input class="form-buy__input" type="tel" name="tel" id="tel" placeholder="+7 Введите 10 цифр номера">
+          </div>
+          <div class="form-buy__wrapper">
+            <label class="form-buy__label" for="email" aria-label="Поле для ввода электронной почты"></label>
+            <input class="form-buy__input" type="email" id="email" name="email" placeholder="E-mail"
+              pattern="yourname@mail.ru" required>
+          </div>
+        </fieldset>
+        <button class="form-buy__button" type="submit">Отправить</button>
+      </form>
+    </div>
   </div>
+
+  <div class="success">
+    <button class="success__button close-button"></button>
+    <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
   </div>
+

@@ -125,6 +125,10 @@
     margin: 0 auto;
     padding: 17px 58px;
   }
+
+  &:hover {
+    background-color: $hover-orange;
+  }
 }
 
 .country__container {
