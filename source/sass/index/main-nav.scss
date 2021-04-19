@@ -1,8 +1,10 @@
 .main-nav {
   margin-right: 55px;
+  margin-left: auto;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
+    width: 100%;
   }
 }
 
@@ -13,6 +15,7 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+    margin-top: 95px;
   }
 
   &--open,

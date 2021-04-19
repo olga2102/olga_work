@@ -16,8 +16,7 @@
           <img class="logo__picture" src="img/logo.svg" width="57" height="22" alt="Логотип турагентства">
         </picture>
       </a>
-      <div class="page-header__container">
-        <button class="toggle toggle--open toggle--close" type="button" aria-label="Переключение меню"></button>
+        <button class="toggle" type="button" aria-label="Переключение меню"></button>
         <nav class="main-nav">
           <ul class="main-nav__list main-nav__list--open">
             <li class="main-nav__item">
@@ -37,7 +36,6 @@
             <use xlink:href="sprite.svg#phone"></use>
           </svg>
           <span>+7 (499) -784-684-46</span></a>
-      </div>
     </div>
   </header>
   <main class="page-main">
@@ -59,7 +57,7 @@
         <div class="places__list">
           <a class="places__item places__item--greece" href="#">
             <!-- <button class="" type="button"> -->
-              <p class="places__item-name">Греция</p>
+            <p class="places__item-name">Греция</p>
           </a>
           <a class="places__item places__item--albania">
             <p class="places__item-name">Албания</p>
@@ -100,7 +98,7 @@
                 высоту
                 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
-              <a class="country__link" href="#">купить тур сейчас</a>
+              <button class="country__button button-buy">купить тур сейчас</button>
             </div>
             <div class="country__wrapper reviews">
               <h4 class="country__reviews reviews__title">Отзывы</h4>
@@ -140,7 +138,7 @@
               удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся
               на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.
             </p>
-            <a class="country__link" href="#">купить тур сейчас</a>
+            <button class="country__button button-buy">купить тур сейчас</button>
           </div>
           <div class="country__wrapper">
             <h4 class="country__reviews">Отзывы</h4>
@@ -159,7 +157,7 @@
               некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина
               каньона составляет 80 км.
             </p>
-            <a class="country__link" href="#">купить тур сейчас</a>
+            <button class="country__button button-buy">купить тур сейчас</button>
           </div>
           <div class="country__wrapper">
             <h4 class="country__reviews">Отзывы</h4>
@@ -177,7 +175,7 @@
               увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными
               скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
             </p>
-            <a class="country__link" href="#">купить тур сейчас</a>
+            <button class="country__button button-buy">купить тур сейчас</button>
           </div>
           <div class="country__wrapper">
             <h4 class="country__reviews">Отзывы</h4>
@@ -237,7 +235,7 @@
               <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <a class="offer-tariff__link" href="#">купить тур сейчас</a>
+          <button type="button" class="offer-tariff__button button-buy">купить тур сейчас</button>
         </div>
         <div class="tariffs__wrapper offer-tariff">
           <div class="offer-tariff__wrapper">
@@ -277,7 +275,27 @@
               <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <a class="offer-tariff__link" href="#">купить тур сейчас</a>
+          <button type="button" class="offer-tariff__button button-buy">купить тур сейчас</button>
+        </div>
+      </div>
+      <div class="buy buy--close">
+        <button class="buy__button close-button"></button>
+        <div class="buy__wrapper">
+          <p class="buy__title">Купить тур</p>
+          <form class="buy__form form-buy">
+            <fieldset class="form-buy__fieldset">
+              <div class="form-buy__wrapper">
+                <label class="form-buy__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
+                <input class="form-buy__input form-buy__input--tel" type="tel" name="tel" id="tel" placeholder="+7 Введите 10 цифр номера">
+              </div>
+              <div class="form-buy__wrapper">
+                <label class="form-buy__label" for="email" aria-label="Поле для ввода электронной почты"></label>
+                <input class="form-buy__input form-buy__input--email" type="email" id="email" name="email" placeholder="E-mail"
+                  pattern="yourname@mail.ru" required>
+              </div>
+            </fieldset>
+            <button class="form-buy__button" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </section>
@@ -357,29 +375,10 @@
     </div>
   </footer>
 
-  <div class="buy buy--close">
-    <button class="buy__button close-button"></button>
-    <div class="buy__wrapper">
-      <p class="buy__title">Купить тур</p>
-      <form class="buy__form form-buy">
-        <fieldset class="form-buy__fieldset">
-          <div class="form-buy__wrapper">
-            <label class="form-buy__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
-            <input class="form-buy__input" type="tel" name="tel" id="tel" placeholder="+7 Введите 10 цифр номера">
-          </div>
-          <div class="form-buy__wrapper">
-            <label class="form-buy__label" for="email" aria-label="Поле для ввода электронной почты"></label>
-            <input class="form-buy__input" type="email" id="email" name="email" placeholder="E-mail"
-              pattern="yourname@mail.ru" required>
-          </div>
-        </fieldset>
-        <button class="form-buy__button" type="submit">Отправить</button>
-      </form>
-    </div>
-  </div>
-
   <div class="success">
     <button class="success__button close-button"></button>
     <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
   </div>
-
+  <script src="js/menu.js"></script>
+  </body>
+  </html>

@@ -1,9 +1,13 @@
 .buy {
-  position: relative;
+  display: none;
+  position: absolute;
   width: 728px;
   min-height: 444px;
   background-color: $light-pink;
   margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &::before {
     position: absolute;
@@ -20,11 +24,14 @@
   }
 
   @media (max-width: $mobile-width) {
-    display: flex;
     flex-direction: column;
     width: 100%;
     background-color: $basic-white;
     min-height: 568px;
+  }
+
+  &--opened {
+    display: block;
   }
 }
 

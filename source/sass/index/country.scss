@@ -112,7 +112,8 @@
   }
 }
 
-.country__link {
+.country__button {
+  @include button-reset;
   color: $basic-white;
   font-weight: bold;
   font-size: 12px;
