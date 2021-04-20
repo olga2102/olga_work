@@ -2,7 +2,7 @@
   position: relative;
   min-height: 455px;
   padding-top: 70px;
-  margin-bottom: 135px;
+  margin-bottom: 160px;
 
   &::before {
     position: absolute;
@@ -10,12 +10,19 @@
     width: 844px;
     height: 455px;
     top: 0;
+    left: 20%;
     background-color: $light-pink;
     background-image: url("../img/background-qa-desktop.jpg");
+    background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-qa-desktop2x.jpg");
+    }
 
     @media (max-width: $tablet-width) {
       width: 768px;
+      left: 0;
     }
 
     @media (max-width: $mobile-width) {
@@ -37,10 +44,10 @@
 
 .feedback__wrapper {
   background-color: $basic-white;
-  width: 50%;
+  width: 55%;
   min-height: 315px;
   border-radius: 5px;
-  padding: 3%;
+  padding: 4%;
   margin-left: auto;
 
   @media (max-width: $tablet-width) {
@@ -65,6 +72,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 15px;
+  margin-top: 12px;
 }
 
 .feedback__text {

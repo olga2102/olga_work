@@ -1,7 +1,11 @@
 .tour {
   position: relative;
   overflow: hidden;
-  margin-bottom: 120px;
+  margin-bottom: 233px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 45px;
@@ -49,7 +53,3 @@
     margin-right: 99px;
   }
 }
-
-// .tour__item:not(:last-child) {
-//   margin-right: 100px;
-// }

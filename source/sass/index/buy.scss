@@ -17,6 +17,12 @@
     left: 0;
     top: 0;
     background-image: url("../img/sea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/sea2x.jpg");
+    }
 
     @media (max-width: $mobile-width) {
       display: none;

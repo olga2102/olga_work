@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 32%;
 
   @media (max-width: $tablet-width) {
     width: 40%;
@@ -29,6 +31,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
+  text-align: center;
   margin: 0;
   margin-bottom: 20px;
 }

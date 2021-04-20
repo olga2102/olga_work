@@ -16,26 +16,26 @@
           <img class="logo__picture" src="img/logo.svg" width="57" height="22" alt="Логотип турагентства">
         </picture>
       </a>
-        <button class="toggle" type="button" aria-label="Переключение меню"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list main-nav__list--open">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                О путешествии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Цены
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a class="page-header__tel-link" href="tel:+78125556666">
-          <svg class="page-header__pic" width="30" height="30">
-            <use xlink:href="sprite.svg#phone"></use>
-          </svg>
-          <span>+7 (499) -784-684-46</span></a>
+      <button class="toggle" type="button" aria-label="Переключение меню"></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list main-nav__list--open">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              О путешествии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Цены
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__tel-link" href="tel:+78125556666">
+        <svg class="page-header__pic" width="30" height="30">
+          <use xlink:href="sprite.svg#phone"></use>
+        </svg>
+        <span>+7 (499) -784-684-46</span></a>
     </div>
   </header>
   <main class="page-main">
@@ -56,7 +56,6 @@
       <div class="places__wrapper">
         <div class="places__list">
           <a class="places__item places__item--greece" href="#">
-            <!-- <button class="" type="button"> -->
             <p class="places__item-name">Греция</p>
           </a>
           <a class="places__item places__item--albania">
@@ -84,7 +83,6 @@
           <li class="tour__item">Хорватия</li>
         </ul>
       </div>
-
       <div class="country country--greece country--current">
         <div class="container">
           <h2 class="country__title">Греция</h2>
@@ -189,7 +187,6 @@
         </div>
       </div>
     </section>
-    </section>
     <section class="tariffs container">
       <h2 class="visually-hidden">Описание и стоимость тарифов</h2>
       <div class="tariffs__wrapper tariffs__wrapper--price">
@@ -204,8 +201,8 @@
       <div class="tariffs__container">
         <div class="tariffs__wrapper offer-tariff offer-tariff--current">
           <div class="offer-tariff__wrapper">
-            <h4 class="offer-tariff__title offer-tariff__title--current">Комплексный</h3>
-              <p class="offer-tariff__price offer-tariff__price--current">$1999</p>
+            <h4 class="offer-tariff__title offer-tariff__title--current">Комплексный</h4>
+            <p class="offer-tariff__price offer-tariff__price--current">$1999</p>
           </div>
           <p class="offer-tariff__text offer-tariff__text--current">Ознакомьтесь с перечнем того, что входит в данный
             пакет</p>
@@ -239,8 +236,8 @@
         </div>
         <div class="tariffs__wrapper offer-tariff">
           <div class="offer-tariff__wrapper">
-            <h4 class="offer-tariff__title">Экономный</h3>
-              <p class="offer-tariff__price">$1999</p>
+            <h4 class="offer-tariff__title">Экономный</h4>
+            <p class="offer-tariff__price">$1999</p>
           </div>
           <p class="offer-tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
           <ul class="offer-tariff__list">
@@ -278,7 +275,7 @@
           <button type="button" class="offer-tariff__button button-buy">купить тур сейчас</button>
         </div>
       </div>
-      <div class="buy buy--close">
+      <div class="buy">
         <button class="buy__button close-button"></button>
         <div class="buy__wrapper">
           <p class="buy__title">Купить тур</p>
@@ -286,17 +283,22 @@
             <fieldset class="form-buy__fieldset">
               <div class="form-buy__wrapper">
                 <label class="form-buy__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
-                <input class="form-buy__input form-buy__input--tel" type="tel" name="tel" id="tel" placeholder="+7 Введите 10 цифр номера">
+                <input class="form-buy__input form-buy__input--tel" type="tel" name="tel" id="tel"
+                  placeholder="+7 Введите 10 цифр номера" pattern="+7-[0-9]{3}-[0-9]{2}-[0*-9]{2}-[0*-9]{2}" required>
               </div>
               <div class="form-buy__wrapper">
                 <label class="form-buy__label" for="email" aria-label="Поле для ввода электронной почты"></label>
-                <input class="form-buy__input form-buy__input--email" type="email" id="email" name="email" placeholder="E-mail"
-                  pattern="yourname@mail.ru" required>
+                <input class="form-buy__input form-buy__input--email" type="email" id="email" name="email"
+                  placeholder="E-mail" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
               </div>
             </fieldset>
             <button class="form-buy__button" type="submit">Отправить</button>
           </form>
         </div>
+      </div>
+      <div class="success">
+        <button class="success__button close-button close-button--success"></button>
+        <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
       </div>
     </section>
     <section class="feedback">
@@ -308,13 +310,13 @@
           <form class="feedback__form form">
             <fieldset class="form-fieldset">
               <div class="form-fieldset__wrapper">
-                <label class="form-fieldset__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
-                <input class="form-fieldset__input" type="tel" name="tel" id="tel"
+                <label class="form-fieldset__label" for="phone" aria-label="Поле для ввода номера телефона"></label>
+                <input class="form-fieldset__input" type="tel" name="tel" id="phone"
                   placeholder="+7 Введите 10 цифр номера" pattern="+7-[0-9]{3}-[0-9]{2}">
               </div>
               <div class="form-fieldset__wrapper">
-                <label class="form-fieldset__label" for="email" aria-label="Поле для ввода электронной почты"></label>
-                <input class="form-fieldset__input" type="email" id="email" name="email" placeholder="E-mail"
+                <label class="form-fieldset__label" for="mail" aria-label="Поле для ввода электронной почты"></label>
+                <input class="form-fieldset__input" type="email" id="mail" name="email" placeholder="E-mail"
                   pattern="yourname@mail.ru" required>
               </div>
             </fieldset>
@@ -374,11 +376,9 @@
         времяпрепровождением</p>
     </div>
   </footer>
-
-  <div class="success">
-    <button class="success__button close-button"></button>
-    <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
-  </div>
   <script src="js/menu.js"></script>
-  </body>
-  </html>
+  <script src="js/form-buy.js"></script>
+  <script src="js/form-success.js"></script>
+</body>
+
+</html>

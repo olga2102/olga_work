@@ -7,6 +7,7 @@
   // background-repeat: no-repeat;
   // background-size: cover;
   margin-bottom: 200px;
+  overflow: hidden;
 
   &::after {
     position: absolute;
@@ -38,10 +39,9 @@
 
 .travel__wrapper {
   width: 475px;
-  padding: 0 100px 0 20px;
+  padding: 185px 100px 0 0;
   margin-left: auto;
   margin-right: 0;
-  padding-top: 210px;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
@@ -49,6 +49,10 @@
     max-width: 468px;
     width: auto;
     padding: 60px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
   }
 }
 
@@ -58,7 +62,7 @@
   line-height: 80px;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (max-width: $tablet-width) {
     font-size: 30px;

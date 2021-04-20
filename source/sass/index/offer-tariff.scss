@@ -4,7 +4,7 @@
   width: 49%;
   border: 1px solid $opacity-grey;
   border-radius: 6px;
-  padding: 40px 18px;
+  padding: 40px 18px 20px 18px;
   justify-content: space-between;
 
   &--current {
@@ -81,7 +81,7 @@
 
 .offer-tariff__list {
   @include list-reset;
-  margin-bottom: 54px;
+  margin-bottom: 46px;
   padding-top: 30px;
 
   @media (max-width: $tablet-width) {

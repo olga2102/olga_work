@@ -1,6 +1,6 @@
 .success {
-  position: relative;
-  display: flex;
+  position: absolute;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 0 11%;
@@ -8,10 +8,15 @@
   min-height: 444px;
   background-color: $light-pink;
   margin: 0 auto;
+  top: 50%;
 
   @media (max-width: $mobile-width) {
     width: 100%;
     padding: 0 5%;
+  }
+
+  &--opened {
+    display: flex;
   }
 }
 
@@ -20,4 +25,5 @@
   font-size: 25px;
   line-height: 170%;
   text-align: center;
+  margin-top: 180px;
 }
