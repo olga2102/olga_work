@@ -1,6 +1,7 @@
 .form-fieldset {
   border: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 20px 0;

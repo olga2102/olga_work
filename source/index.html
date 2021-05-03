@@ -56,18 +56,23 @@
       <div class="places__wrapper">
         <div class="places__list">
           <a class="places__item places__item--greece" href="#">
+            <img class="places__img" src="../img/greece.jpg" width="350" height="430" alt="Вид на греческую деревню на скале">
             <p class="places__item-name">Греция</p>
           </a>
           <a class="places__item places__item--albania">
             <p class="places__item-name">Албания</p>
+            <img class="places__img" src="../img/albania.jpg" width="350" height="430" alt="Вид на море и курортную зону Албании">
           </a>
           <a class="places__item places__item--macedonia">
+            <img class="places__img" src="../img/macedonia.jpg" width="350" height="430" alt="Вид на храм и море в Македонии">
             <p class="places__item-name">Македония</p>
           </a>
           <a class="places__item places__item--montenegro">
+            <img class="places__img" src="../img/montenegro.jpg" width="350" height="430" alt="Вид на реку и леса в Черногории">
             <p class="places__item-name">Черногория</p>
           </a>
           <a class="places__item places__item--croatia">
+            <img class="places__img" src="../img/croatia.jpg" width="350" height="430" alt="Вид на каньон в Хорватии">
             <p class="places__item-name">Хорватия</p>
           </a>
         </div>
@@ -76,11 +81,21 @@
     <section class="tour">
       <div class="container">
         <ul class="tour__list">
-          <li class="tour__item tour__item--current">Греция</li>
-          <li class="tour__item">Албания</li>
-          <li class="tour__item">Македония</li>
-          <li class="tour__item">Черногория</li>
-          <li class="tour__item">Хорватия</li>
+          <li class="tour__item tour__item--current">
+            <a class="tour__link tour__link--current" href="#">Греция</a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="#">Албания</a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="#">Македония</a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="#">Черногория</a>
+          </li>
+          <li class="tour__item">
+            <a class="tour__link" href="#">Хорватия</a>
+          </li>
         </ul>
       </div>
       <div class="country country--greece country--current">
@@ -96,7 +111,7 @@
                 высоту
                 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
-              <button class="country__button button-buy">купить тур сейчас</button>
+              <a class="country__button button-buy" href="#">купить тур сейчас</a>
             </div>
             <div class="country__wrapper reviews">
               <h4 class="country__reviews reviews__title">Отзывы</h4>
@@ -136,7 +151,7 @@
               удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся
               на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.
             </p>
-            <button class="country__button button-buy">купить тур сейчас</button>
+            <a class="country__button button-buy" href="">купить тур сейчас</a>
           </div>
           <div class="country__wrapper">
             <h4 class="country__reviews">Отзывы</h4>
@@ -155,7 +170,7 @@
               некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина
               каньона составляет 80 км.
             </p>
-            <button class="country__button button-buy">купить тур сейчас</button>
+            <a class="country__button button-buy" href="#">купить тур сейчас</a>
           </div>
           <div class="country__wrapper">
             <h4 class="country__reviews">Отзывы</h4>
@@ -173,7 +188,7 @@
               увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными
               скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
             </p>
-            <button class="country__button button-buy">купить тур сейчас</button>
+            <a class="country__button button-buy" href="#">купить тур сейчас</a>
           </div>
           <div class="country__wrapper">
             <h4 class="country__reviews">Отзывы</h4>
@@ -232,7 +247,7 @@
               <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <button type="button" class="offer-tariff__button button-buy">купить тур сейчас</button>
+          <a  class="offer-tariff__button button-buy" href="">купить тур сейчас</a>
         </div>
         <div class="tariffs__wrapper offer-tariff">
           <div class="offer-tariff__wrapper">
@@ -272,11 +287,11 @@
               <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <button type="button" class="offer-tariff__button button-buy">купить тур сейчас</button>
+          <a class="offer-tariff__button button-buy" href="">купить тур сейчас</a>
         </div>
       </div>
       <div class="buy">
-        <button class="buy__button close-button"></button>
+        <button class="buy__button close-button" arial-label="Закрыть форму"></button>
         <div class="buy__wrapper">
           <p class="buy__title">Купить тур</p>
           <form class="buy__form form-buy">
@@ -297,10 +312,10 @@
         </div>
       </div>
       <div class="success">
-        <button class="success__button close-button close-button--success"></button>
+        <button class="success__button close-button close-button--success" arial-label="Закрыть форму"></button>
         <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
       </div>
-    </section>
+     </section> -->
     <section class="feedback">
       <div class="container">
         <h2 class="visually-hidden">Обратная связь</h2>
@@ -324,9 +339,9 @@
           </form>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="page-footer container">
+  <footer class="page-footer container">
     <section class="page-footer__wrapper page-footer__wrapper--directions directions">
       <h4 class="directions__title">Следующие путешествия</h4>
       <div class="directions__list cities-directions">
@@ -375,7 +390,7 @@
         туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
         времяпрепровождением</p>
     </div>
-  </footer> -->
+  </footer>
   <script src="js/script.js"></script>
 </body>
 

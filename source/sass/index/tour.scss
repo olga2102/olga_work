@@ -40,6 +40,16 @@
 }
 
 .tour__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+
+    @media (max-width: $tablet-width) {
+      margin-right: 105px;
+    }
+  }
+}
+
+.tour__link {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -47,9 +57,5 @@
 
   &--current {
     color: $orange;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-right: 99px;
   }
 }

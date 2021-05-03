@@ -255,6 +255,7 @@ img {
     position: absolute;
     content: "";
     background-image: url("../img/background-desktop.jpg");
+    background-color: #cce5fc;
     width: 100%;
     height: 860px;
     background-repeat: no-repeat;
@@ -416,17 +417,13 @@ img {
 
 .places__item {
   position: relative;
-  min-width: 288px;
   max-width: 350px;
-  width: 29%;
+  width: 30%;
   height: 430px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #cce5fc;
-  margin-bottom: 100px;
-  background-size: cover; }
+  margin-bottom: 100px; }
   .places__item:not(:last-child) {
-    margin-right: 3%; }
+    margin-right: 5%; }
   .places__item:last-child {
     margin-left: 120px; }
     @media (max-width: 1023px) {
@@ -436,31 +433,6 @@ img {
   .places__item:nth-child(3n) {
     margin-right: 0;
     margin-left: 0; }
-  .places__item--greece {
-    background-image: url("../img/greece.jpg"); }
-    @media (min-resolution: 2dppx) {
-      .places__item--greece {
-        background-image: url("../img/greece2x.jpg"); } }
-  .places__item--croatia {
-    background-image: url("../img/croatia.jpg"); }
-    @media (min-resolution: 2dppx) {
-      .places__item--croatia {
-        background-image: url("../img/croatia2x.jpg"); } }
-  .places__item--montenegro {
-    background-image: url("../img/montenegro.jpg"); }
-    @media (min-resolution: 2dppx) {
-      .places__item--montenegro {
-        background-image: url("../img/montenegro2x.jpg"); } }
-  .places__item--macedonia {
-    background-image: url("../img/macedonia.jpg"); }
-    @media (min-resolution: 2dppx) {
-      .places__item--macedonia {
-        background-image: url("../img/macedonia2x.jpg"); } }
-  .places__item--albania {
-    background-image: url("../img/albania.jpg"); }
-    @media (min-resolution: 2dppx) {
-      .places__item--albania {
-        background-image: url("../img/albania2x.jpg"); } }
   @media (max-width: 1023px) {
     .places__item {
       width: 40%;
@@ -480,9 +452,12 @@ img {
   .places__item:hover {
     box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.6) inset; }
 
+.places__img {
+  height: 100%; }
+
 .places__item-name {
   position: absolute;
-  min-width: 215px;
+  width: 87%;
   display: inline;
   text-align: center;
   color: #2c2e3f;
@@ -536,16 +511,19 @@ img {
       margin-bottom: 30px;
       flex-wrap: nowrap; } }
 
-.tour__item {
+.tour__item:not(:last-child) {
+  margin-right: 10px; }
+  @media (max-width: 1023px) {
+    .tour__item:not(:last-child) {
+      margin-right: 105px; } }
+
+.tour__link {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: rgba(44, 46, 63, 0.3); }
-  .tour__item--current {
+  .tour__link--current {
     color: #fe7865; }
-  @media (max-width: 1023px) {
-    .tour__item {
-      margin-right: 99px; } }
 
 .country {
   display: none; }
@@ -1300,6 +1278,7 @@ img {
 .form-fieldset {
   border: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 20px 0; }
