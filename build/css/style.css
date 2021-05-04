@@ -278,7 +278,7 @@ img {
   width: 475px;
   padding: 185px 100px 0 0;
   margin-left: auto;
-  margin-right: 0; }
+  margin-right: 21%; }
   @media (max-width: 1023px) {
     .travel__wrapper {
       margin: 0 auto;
@@ -415,8 +415,11 @@ img {
   flex-wrap: wrap;
   justify-content: center; }
 
+.places__link {
+  position: relative; }
+
 .places__item {
-  position: relative;
+  min-width: 288px;
   max-width: 350px;
   width: 30%;
   height: 430px;
@@ -453,12 +456,17 @@ img {
     box-shadow: 0 0 0 145px rgba(0, 0, 0, 0.6) inset; }
 
 .places__img {
-  height: 100%; }
+  height: 100%;
+  margin: auto;
+  width: 100%; }
+  @media (max-width: 1023px) {
+    .places__img {
+      width: 288px;
+      height: 425px; } }
 
 .places__item-name {
   position: absolute;
   width: 87%;
-  display: inline;
   text-align: center;
   color: #2c2e3f;
   font-weight: 500;

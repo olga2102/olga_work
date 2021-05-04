@@ -79,9 +79,13 @@
   justify-content: center;
 }
 
-.places__item {
+.places__link {
   position: relative;
-  // min-width: 288px;
+}
+
+.places__item {
+  // position: relative;
+  min-width: 288px;
   max-width: 350px;
   width: 30%;
   height: 430px;
@@ -137,6 +141,13 @@
 
 .places__img {
   height: 100%;
+  margin: auto;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    height: 425px;
+  }
 }
 
 // .places__item:not(:nth-child(3n)) {
@@ -146,7 +157,6 @@
 .places__item-name {
   position: absolute;
   width: 87%;
-  display: inline;
   text-align: center;
   color: $font-grey;
   font-weight: 500;

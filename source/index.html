@@ -39,7 +39,7 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="travel container">
+    <section class="travel">
       <div class="travel__wrapper">
         <h2 class="travel__title">Путешествие по Европе</h2>
         <p class="travel__intro">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
@@ -49,33 +49,60 @@
         <a class="travel__link">смотреть тур</a>
       </div>
     </section>
-     <section class="places container">
+    <section class="places container">
       <h2 class="places__title">Места <br class="places__title-break">посещения</h2>
       <p class="places__intro">Вы можете выбрать полный тур или <br class="places__intro-break">частичный, с посещением
         первых 3 мест</p>
       <div class="places__wrapper">
-        <div class="places__list">
-          <a class="places__item places__item--greece" href="#">
-            <img class="places__img" src="../img/greece.jpg" width="350" height="430" alt="Вид на греческую деревню на скале">
-            <p class="places__item-name">Греция</p>
-          </a>
-          <a class="places__item places__item--albania">
-            <p class="places__item-name">Албания</p>
-            <img class="places__img" src="../img/albania.jpg" width="350" height="430" alt="Вид на море и курортную зону Албании">
-          </a>
-          <a class="places__item places__item--macedonia">
-            <img class="places__img" src="../img/macedonia.jpg" width="350" height="430" alt="Вид на храм и море в Македонии">
-            <p class="places__item-name">Македония</p>
-          </a>
-          <a class="places__item places__item--montenegro">
-            <img class="places__img" src="../img/montenegro.jpg" width="350" height="430" alt="Вид на реку и леса в Черногории">
-            <p class="places__item-name">Черногория</p>
-          </a>
-          <a class="places__item places__item--croatia">
-            <img class="places__img" src="../img/croatia.jpg" width="350" height="430" alt="Вид на каньон в Хорватии">
-            <p class="places__item-name">Хорватия</p>
-          </a>
-        </div>
+        <ul class="places__list">
+          <li class="places__item">
+            <a class="places__link places__item--greece" href="#">
+              <picture>
+                <source media="(max-width: 1159px)" srcset="../img/greece-mobile.jpg 1x, ../img/greece-mobile2x.jpg 2x">
+                <img class="places__img" src="../img/greece.jpg" srcset="../img/greece2x.jpg 2x"
+                  alt="Вид на греческую деревню на скале">
+              </picture>
+              <p class="places__item-name">Греция</p>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link places__item--albania">
+              <p class="places__item-name">Албания</p>
+              <picture>
+                <source media="(max-width: 1159px)"
+                  srcset="../img/albania-mobile.jpg 1x, ../img/albania-mobile2x.jpg 2x">
+                <img class="places__img" src="../img/albania.jpg" srcset="../img/albania2x.jpg 2x"
+                  alt="Вид на море и курортную зону Албании">
+              </picture>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link places__item--macedonia">
+              <source media="(max-width: 1159px)"
+              srcset="../img/macedonia-mobile.jpg 1x, ../img/macedonia-mobile2x.jpg 2x">
+              <img class="places__img" src="../img/macedonia.jpg" srcset="../img/macedonia2x.jpg 2x"
+                alt="Вид на храм и море в Македонии">
+              <p class="places__item-name">Македония</p>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link item places__item--montenegro">
+              <source media="(max-width: 1159px)"
+              srcset="../img/montenegro-mobile.jpg 1x, ../img/montenegro-mobile2x.jpg 2x">
+              <img class="places__img" src="../img/montenegro.jpg" srcset="../img/montenegro2x.jpg 2x"
+                alt="Вид на реку и леса в Черногории">
+              <p class="places__item-name">Черногория</p>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link places__item--croatia">
+              <source media="(max-width: 1159px)"
+              srcset="../img/croatia-mobile.jpg 1x, ../img/croatia-mobile2x.jpg 2x">
+              <img class="places__img" src="../img/croatia.jpg" srcset="../img/croatia2x.jpg 2x" alt="Вид на каньон в Хорватии">
+              <p class="places__item-name">Хорватия</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="tour">
