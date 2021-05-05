@@ -1,15 +1,11 @@
 .container {
   min-width: 320px;
-  // width: auto;
+  max-width: 1212px;
   margin: 0 auto;
-  padding: 0 19.531%;
-  max-width: 1920px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 10.677%;
-  }
+  padding: 0 21px;
 
   @media (max-width: $mobile-width) {
-    padding: 0 5%;
+    padding: 0 16px;
   }
 }
+

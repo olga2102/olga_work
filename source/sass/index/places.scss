@@ -47,9 +47,12 @@
   }
 }
 
-.places__title-break {
+.places__description {
+  width: 358px;
+
   @media (max-width: $tablet-width) {
-    display: none;
+    width: initial;
+    margin: 0 auto;
   }
 }
 
@@ -79,35 +82,27 @@
   justify-content: center;
 }
 
-.places__link {
-  position: relative;
-}
-
 .places__item {
   // position: relative;
-  min-width: 288px;
-  max-width: 350px;
-  width: 30%;
-  height: 430px;
+  width: 29.914%;
   background-color: $background-blue;
   margin-bottom: 100px;
+  height: 100%;
 
-  &:not(:last-child) {
-    margin-right: 5%;
+  &:not(:first-child) {
+    margin-left: 5%;
   }
 
   &:last-child {
     margin-left: 120px;
-
-    @media (max-width: $tablet-width) {
-      margin-left: 0;
-      margin-bottom: 0;
-    }
   }
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  &:nth-child(4n) {
     margin-left: 0;
+  }
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -115,39 +110,50 @@
     height: 425px;
     margin-bottom: 19px;
 
-    &:not(:nth-child(2n)) {
-      margin-right: 30px;
+    &:nth-child(3) {
+      margin-left: 0;
+      margin-right: 5%;
     }
 
-    &:nth-child(2n) {
-      margin-right: 0;
+    &:last-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 19px;
     }
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-bottom: 35px;
-    margin-right: 0;
 
-    &:not(:nth-child(2n)) {
+    &:nth-child(n) {
+      margin-left: 0;
       margin-right: 0;
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+}
+
+.places__link {
+  position: relative;
+  display: block;
+  overflow-y: hidden;
+  height: 100%;
 
   &:hover {
+    background-color: rgba(44, 46, 63, 0.6);
     box-shadow: 0 0 0 145px $shadow-black inset;
   }
 }
 
 .places__img {
-  height: 100%;
-  margin: auto;
+  height: auto;
   width: 100%;
-
-  @media (max-width: $tablet-width) {
-    width: 288px;
-    height: 425px;
-  }
 }
 
 // .places__item:not(:nth-child(3n)) {
@@ -176,7 +182,32 @@
   }
 }
 
-// .places__wrapper {
-//   display: flex;
-//   justify-content: center;
-// }
+.places__item-text {
+  position: absolute;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.places__inner {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 46, 63, 0.6);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+
+  &:hover {
+    display: block;
+  }
+}

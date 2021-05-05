@@ -1,14 +1,16 @@
+'use strict';
+
 let menu = document.querySelector(".main-nav__list");
 let openMenu = document.querySelector(".toggle");
-let openButton = document.querySelector("toggle");
+// let openButton = document.querySelector("toggle");
 
-openButton.classList.add("toggle--close");
+openMenu.classList.add("toggle--close");
 menu.classList.remove("main-nav__list--open");
 
 openMenu.addEventListener("click", function () {
   menu.classList.toggle("main-nav__list--open");
-  openButton.classList.toggle("toggle--close");
-  openButton.classList.toggle("toggle--open");
+  openMenu.classList.toggle("toggle--close");
+  openMenu.classList.toggle("toggle--open");
 });
 
 let buttonTour = document.querySelectorAll(".button-buy");
@@ -18,7 +20,8 @@ let inputTel = document.querySelector(".form-buy__input--tel");
 let inputMail = document.querySelector(".form-buy__input--email");
 
 for(let i = 0; i < buttonTour.length; i++) {
-buttonTour[i].addEventListener("click", function () {
+buttonTour[i].addEventListener("click", function (evt) {
+  evt.preventDefault();
   formBuy.classList.add("buy--opened");
   inputTel.focus();
 });
