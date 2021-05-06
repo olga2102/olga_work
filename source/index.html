@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Путешествие по Европе</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/montserrat.woff2" as="font" rel="preload" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -31,7 +32,7 @@
           </li>
         </ul>
       </nav>
-      <a class="page-header__tel-link" href="tel:+78125556666">
+      <a class="page-header__tel-link" href="tel:+749978468446">
         <svg class="page-header__pic" width="30" height="30">
           <use xlink:href="img/sprite.svg#phone"></use>
         </svg>
@@ -43,9 +44,7 @@
       <div class="travel__wrapper">
         <h2 class="travel__title">Путешествие по Европе</h2>
         <p class="travel__intro">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
-          также
-          потрясающая красота
-          природы.</p>
+          также потрясающая красот природы.</p>
         <a class="travel__link">смотреть тур</a>
       </div>
     </section>
@@ -72,12 +71,15 @@
         </li>
         <li class="places__item">
           <a class="places__link">
-            <p class="places__item-name">Албания</p>
             <picture>
               <source media="(max-width: 1023px)" srcset="../img/albania-mobile.jpg 1x, ../img/albania-mobile2x.jpg 2x">
               <img class="places__img" src="../img/albania.jpg" srcset="../img/albania2x.jpg 2x"
                 alt="Вид на море и курортную зону Албании">
             </picture>
+            <div class="places__inner">
+              <p class="places__item-text">Смотреть подробнее</p>
+            </div>
+            <p class="places__item-name">Албания</p>
           </a>
         </li>
         <li class="places__item">
@@ -88,6 +90,9 @@
               <img class="places__img" src="../img/macedonia.jpg" srcset="../img/macedonia2x.jpg 2x"
                 alt="Вид на храм и море в Македонии">
             </picture>
+            <div class="places__inner">
+              <p class="places__item-text">Смотреть подробнее</p>
+            </div>
             <p class="places__item-name">Македония</p>
           </a>
         </li>
@@ -99,6 +104,9 @@
               <img class="places__img" src="../img/montenegro.jpg" srcset="../img/montenegro2x.jpg 2x"
                 alt="Вид на реку и леса в Черногории">
             </picture>
+            <div class="places__inner">
+              <p class="places__item-text">Смотреть подробнее</p>
+            </div>
             <p class="places__item-name">Черногория</p>
           </a>
         </li>
@@ -109,6 +117,9 @@
               <img class="places__img" src="../img/croatia.jpg" srcset="../img/croatia2x.jpg 2x"
                 alt="Вид на каньон в Хорватии">
             </picture>
+            <div class="places__inner">
+              <p class="places__item-text">Смотреть подробнее</p>
+            </div>
             <p class="places__item-name">Хорватия</p>
           </a>
         </li>
@@ -281,7 +292,12 @@
           потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
         </p>
         <p class="tariffs__connection">Свяжитесь с нами</p>
-        <a class="tariffs__tel" href="tel:+78125556666">+7 (499) -784-684-46</a>
+        <a class="tariffs__tel" href="tel:+749978468446">
+          <svg class="tariffs__tel-pic" width="30" height="30">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</span></a>
+      </div>
       </div>
       <div class="tariffs__container">
         <div class="tariffs__wrapper offer-tariff">
@@ -445,9 +461,9 @@
           <use xlink:href="img/sprite.svg#mail"></use>
         </svg>
         <span class="page-footer__mail page-footer__mail--address">puteshestviemechta@gmail.ru</span>
-        <span class="page-footer__mail page-footer__mail--word">Почта</span>
+        <!-- <span class="page-footer__mail page-footer__mail--word">Почта</span> -->
       </a>
-      <a class="contacts__link contacts__link--tel" href="tel:+78125556666">
+      <a class="contacts__link contacts__link--tel" href="tel:+749978468446">
         <svg class="page-footer__pic" width="30" height="30">
           <use xlink:href="img/sprite.svg#phone"></use>
         </svg>

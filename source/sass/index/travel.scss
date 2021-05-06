@@ -8,6 +8,7 @@
   // background-size: cover;
   margin-bottom: 200px;
   overflow: hidden;
+  padding-bottom: 30px;
 
   &::after {
     position: absolute;
@@ -15,7 +16,7 @@
     background-image: url("../img/background-desktop.jpg");
     background-color: $background-blue;
     width: 100%;
-    height: 860px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
@@ -35,11 +36,16 @@
   @media (max-width: $tablet-width) {
     min-height: 344px;
     margin-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 48px;
   }
 }
 
 .travel__wrapper {
-  width: 475px;
+  width: 26%;
   padding: 185px 100px 0 0;
   margin-left: auto;
   margin-right: 21%;
@@ -72,7 +78,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 145px;
+    margin-bottom: 100px;
   }
 }
 
@@ -115,10 +121,17 @@
     background-repeat: no-repeat;
   }
 
+  @media (max-width: $tablet-width) {
+    padding: 18px;
+    width: 53%;
+    margin: 0 auto;
+  }
+
   @media (max-width: $mobile-width) {
     margin: 0 15px;
     text-align: left;
     padding: 18px 0 18px 40px;
+    width: 90%;
   }
 
   &:hover {

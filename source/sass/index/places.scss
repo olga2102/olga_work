@@ -184,6 +184,7 @@
 
 .places__item-text {
   position: absolute;
+  width: 76%;
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -195,7 +196,7 @@
   border: 1px solid rgba(255, 255, 255, 0.7);
   text-align: center;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 29px 15px;
 }
 
 .places__inner {
@@ -206,8 +207,8 @@
   z-index: 3;
   position: absolute;
   top: 0;
+}
 
-  &:hover {
-    display: block;
-  }
+.places__link:hover .places__inner {
+  display: block;
 }

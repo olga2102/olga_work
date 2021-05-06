@@ -20,7 +20,6 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    margin-bottom: 30px;
     min-height: 614px;
   }
 }
@@ -90,7 +89,7 @@
 .offer-tariff__list {
   @include list-reset;
   padding-top: 30px;
-  margin: 0 3% 46px 3%;
+  margin: 0 7% 46px 7%;
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;

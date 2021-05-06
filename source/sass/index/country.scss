@@ -178,19 +178,38 @@
 }
 
 .country__title {
+  display: inline;
+  position: relative;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
   margin: 0;
+  padding-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     font-size: 30px;
     line-height: 150%;
+    margin: 0 auto;
+    display: block;
     text-align: center;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     font-size: 24px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 83%;
+    height: 3px;
+    background-color: $orange;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -207,7 +226,7 @@
   @media (max-width: $tablet-width) {
     text-align: center;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 0;
   }
 }
 
@@ -223,7 +242,13 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    padding: 17px 58px;
+    padding: 17px;
+    width: 35%;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 
   &:hover {

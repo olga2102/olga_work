@@ -107,24 +107,11 @@
 }
 
 .tariffs__tel {
-  position: relative;
+  display: flex;
   font-size: 20px;
   line-height: 32px;
   color: $basic-black;
   text-align: center;
-
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   width: 30px;
-  //   height: 30px;
-  //   background-image: url("../img/phone.svg");
-  //   left: 28%;
-
-  //   @media (max-width: $tablet-width) {
-  //     display: none;
-  //   }
-  // }
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -146,5 +133,15 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+  }
+}
+
+.tariffs__tel-pic {
+  stroke: $orange;
+  fill: none;
+  margin-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }

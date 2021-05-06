@@ -61,19 +61,3 @@
   fill: none;
   margin-right: 15px;
 }
-
-.page-footer__mail {
-  &--address {
-    @media (max-width: $mobile-width) {
-      display: none;
-    }
-  }
-
-  &--word {
-    display: none;
-
-    @media (max-width: $mobile-width) {
-      display: block;
-    }
-  }
-}

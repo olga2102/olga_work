@@ -12,12 +12,13 @@
 }
 
 .reviews__title {
+  display: inline;
   position: relative;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 
   @media (max-width: $mobile-width) {
     align-self: center;
@@ -28,10 +29,15 @@
   &::after {
     position: absolute;
     content: "";
-    width: 68px;
-    border: 0.73px solid $orange;
+    width: 55%;
+    height: 0.71px;
+    background-color: $orange;
     bottom: 0;
     left: 0;
+
+    @media (max-width: $mobile-width) {
+      width: 85%;
+    }
   }
 }
 

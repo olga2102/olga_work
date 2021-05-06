@@ -46,12 +46,3 @@
   }
 }
 
-.cities-directions__list {
-  @include list-reset;
-  width: 32%;
-
-  @media (max-width: $mobile-width) {
-    width: 50%;
-  }
-}
-
