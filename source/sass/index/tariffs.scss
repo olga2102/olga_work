@@ -119,6 +119,10 @@
     color: $orange;
     text-decoration-line: underline;
   }
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 .tariffs__container {

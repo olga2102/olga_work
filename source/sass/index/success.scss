@@ -21,9 +21,14 @@
 }
 
 .success__text {
+  display: none;
   font-weight: 500;
   font-size: 25px;
   line-height: 170%;
   text-align: center;
   margin-top: 180px;
+
+  &--sended {
+    display: block;
+  }
 }

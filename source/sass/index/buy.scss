@@ -39,6 +39,10 @@
   &--opened {
     display: block;
   }
+
+  &--sended::before {
+    background-image: none;
+  }
 }
 
 .buy__wrapper {
@@ -49,6 +53,10 @@
   @media (max-width: $mobile-width) {
     padding: 100px 15px;
     width: 100%;
+  }
+
+  &--sended {
+    display: none;
   }
 }
 

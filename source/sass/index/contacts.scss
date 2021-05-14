@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.contacts__link:hover .page-footer__pic {
+  stroke: $orange;
+}
+
 .contacts__title {
   font-weight: 600;
   font-size: 18px;

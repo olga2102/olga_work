@@ -57,7 +57,7 @@
       </div>
       <ul class="places__list">
         <li class="places__item">
-          <a class="places__link" href="#">
+          <a class="places__link" href="#tour" data-country="greece">
             <picture>
               <source media="(max-width: 1023px)" srcset="img/greece-mobile.jpg 1x, img/greece-mobile2x.jpg 2x">
               <img class="places__img" src="img/greece.jpg" srcset="img/greece2x.jpg 2x"
@@ -70,7 +70,7 @@
           </a>
         </li>
         <li class="places__item">
-          <a class="places__link">
+          <a class="places__link" href="#tour" data-country="albania">
             <picture>
               <source media="(max-width: 1023px)" srcset="../img/albania-mobile.jpg 1x, ../img/albania-mobile2x.jpg 2x">
               <img class="places__img" src="../img/albania.jpg" srcset="../img/albania2x.jpg 2x"
@@ -83,7 +83,7 @@
           </a>
         </li>
         <li class="places__item">
-          <a class="places__link">
+          <a class="places__link" href="#tour" data-country="macedonia">
             <picture>
               <source media="(max-width: 1023px)"
                 srcset="../img/macedonia-mobile.jpg 1x, ../img/macedonia-mobile2x.jpg 2x">
@@ -97,7 +97,7 @@
           </a>
         </li>
         <li class="places__item">
-          <a class="places__link">
+          <a class="places__link" href="#tour" data-country="montenegro">
             <picture>
               <source media="(max-width: 1023px)"
                 srcset="../img/montenegro-mobile.jpg 1x, ../img/montenegro-mobile2x.jpg 2x">
@@ -111,7 +111,7 @@
           </a>
         </li>
         <li class="places__item">
-          <a class="places__link">
+          <a class="places__link" href="#tour" data-country="croatia">
             <picture>
               <source media="(max-width: 1023px)" srcset="../img/croatia-mobile.jpg 1x, ../img/croatia-mobile2x.jpg 2x">
               <img class="places__img" src="../img/croatia.jpg" srcset="../img/croatia2x.jpg 2x"
@@ -125,27 +125,27 @@
         </li>
       </ul>
     </section>
-    <section class="tour">
+    <section class="tour" id="tour">
       <div class="container">
         <ul class="tour__list">
-          <li class="tour__item tour__item--current">
-            <a class="tour__link tour__link--current" href="#">Греция</a>
+          <li class="tour__item">
+            <a class="tour__link tour__link--current" href="#" data-country="greece">Греция</a>
           </li>
           <li class="tour__item">
-            <a class="tour__link" href="#">Албания</a>
+            <a class="tour__link" href="#" data-country="albania">Албания</a>
           </li>
           <li class="tour__item">
-            <a class="tour__link" href="#">Македония</a>
+            <a class="tour__link" href="#" data-country="macedonia">Македония</a>
           </li>
           <li class="tour__item">
-            <a class="tour__link" href="#">Черногория</a>
+            <a class="tour__link" href="#" data-country="montenegro">Черногория</a>
           </li>
           <li class="tour__item">
-            <a class="tour__link" href="#">Хорватия</a>
+            <a class="tour__link" href="#" data-country="croatia">Хорватия</a>
           </li>
         </ul>
       </div>
-      <div class="country country--greece country--current">
+      <div class="country country--greece country--current" data-country="greece">
         <div class="container">
           <h2 class="country__title">Греция</h2>
           <div class="country__container">
@@ -176,7 +176,7 @@
           </div>
         </div>
       </div>
-      <div class="country country--albania">
+      <div class="country country--albania" data-country="albania">
         <div class="container">
           <h2 class="country__title">Албания</h2>
           <div class="country__container">
@@ -203,7 +203,7 @@
           </div>
         </div>
       </div>
-      <div class="country country--macedonia">
+      <div class="country country--macedonia" data-country="macedonia">
         <div class="container">
           <h2 class="country__title">Македония</h2>
           <div class="country__container">
@@ -231,7 +231,7 @@
           </div>
         </div>
       </div>
-      <div class="country country--montenegro">
+      <div class="country country--montenegro" data-country="montenegro">
         <div class="container">
           <h2 class="country__title">Черногория</h2>
           <div class="country__container">
@@ -256,7 +256,7 @@
           </div>
         </div>
       </div>
-      <div class="country country--croatia">
+      <div class="country country--croatia" data-country="croatia">
         <div class="container">
           <h2 class="country__title">Хорватия</h2>
           <div class="country__container">
@@ -396,11 +396,12 @@
             <button class="form-buy__button" type="submit">Отправить</button>
           </form>
         </div>
-      </div>
-      <div class="success">
-        <button class="success__button close-button close-button--success" arial-label="Закрыть форму"></button>
         <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
       </div>
+      <!-- <div class="success">
+        <button class="success__button close-button close-button--success" arial-label="Закрыть форму"></button>
+        <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
+      </div> -->
      </section>
     <section class="feedback">
       <div class="container">
@@ -413,12 +414,11 @@
               <div class="form-fieldset__wrapper">
                 <label class="form-fieldset__label" for="phone" aria-label="Поле для ввода номера телефона"></label>
                 <input class="form-fieldset__input" type="tel" name="tel" id="phone"
-                  placeholder="+7 Введите 10 цифр номера" pattern="+7-[0-9]{3}-[0-9]{2}">
+                  placeholder="+7 Введите 10 цифр номера" pattern='[0-9]{10}'>
               </div>
               <div class="form-fieldset__wrapper">
                 <label class="form-fieldset__label" for="mail" aria-label="Поле для ввода электронной почты"></label>
-                <input class="form-fieldset__input" type="email" id="mail" name="email" placeholder="E-mail"
-                  pattern="yourname@mail.ru" required>
+                <input class="form-fieldset__input" type="email" id="mail" name="email" placeholder="E-mail" required>
               </div>
             </fieldset>
             <button class="form__button" type="submit">Отправить</button>
@@ -456,7 +456,7 @@
     </section>
     <div class="page-footer__wrapper page-footer__wrapper--contacts contacts">
       <h4 class="contacts__title">Наши контакты</h4>
-      <a class="contacts__link contacts__link--email" href="#">
+      <a class="contacts__link contacts__link--email" href="mailto:puteshestviemechta@gmail.ru">
         <svg class="page-footer__pic" width="26" height="20">
           <use xlink:href="img/sprite.svg#mail"></use>
         </svg>
