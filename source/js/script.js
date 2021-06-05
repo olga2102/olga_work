@@ -2,7 +2,6 @@
 
 let menu = document.querySelector(".main-nav__list");
 let openMenu = document.querySelector(".toggle");
-// let openButton = document.querySelector("toggle");
 
 openMenu.classList.add("toggle--close");
 menu.classList.remove("main-nav__list--open");
@@ -15,32 +14,30 @@ openMenu.addEventListener("click", function () {
 
 let buttonTour = document.querySelectorAll(".button-buy");
 let formBuy = document.querySelector(".buy");
-let closeButton = document.querySelector(".close-button");
-let inputTel = document.querySelector(".form-buy__input--tel");
-let inputMail = document.querySelector(".form-buy__input--email");
+let closeButton = document.querySelectorAll(".close-button");
+let inputTel = document.querySelectorAll(".form__input--tel");
+let inputMail = document.querySelectorAll(".form__input--email");
+let forms = document.querySelectorAll(".form");
+// let errorText = document.querySelector(".form__alert");
 
 for(let i = 0; i < buttonTour.length; i++) {
 buttonTour[i].addEventListener("click", function (evt) {
+  console.log(buttonTour[i]);
   evt.preventDefault();
   formBuy.classList.add("buy--opened");
-  inputTel.focus();
+  inputTel[0].focus();
 });
 }
 
-closeButton.addEventListener("click", function () {
-  formBuy.classList.remove("buy--opened");
-  formBuyWrapper.classList.remove("buy__wrapper--sended");
-  formBuy.classList.remove("buy--sended");
-  textSuccess.classList.remove("success__text--sended");
-});
-
-formBuy.addEventListener("submit", function (evt) {
-  if (!inputTel.value || !inputMail.value) {
-    evt.preventDefault();
-  } else {
-    localStorage.setItem("tel", inputTel.value);
-    localStorage.setItem("email", inputMail.value);
-  }
+forms.forEach((form) => {
+  form.addEventListener("submit", function (evt) {
+    if (!inputTel.value || !inputMail.value) {
+      evt.preventDefault();
+    } else {
+      localStorage.setItem("tel", inputTel.value);
+      localStorage.setItem("email", inputMail.value);
+    }
+  });
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -51,60 +48,28 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-let buyButton = document.querySelector(".form-buy__button");
+let sendButton = document.querySelectorAll(".form__button");
 let formSuccess = document.querySelector(".success");
 let closeButtonSuccess = document.querySelector(".close-button--success");
 let formBuyWrapper = document.querySelector(".buy__wrapper");
-let textSuccess = document.querySelector(".success__text");
+let formFeedbackWrapper = document.querySelector(".feedback__wrapper");
 
-buyButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  // formBuy.classList.remove("buy--opened");
-  formBuyWrapper.classList.add("buy__wrapper--sended");
-  formBuy.classList.add("buy--sended");
-  textSuccess.classList.add("success__text--sended");
-  // formSuccess.classList.add("success--opened");
-});
 
-// closeButtonSuccess.addEventListener("click", function () {
-//   formSuccess.classList.remove("success--opened");
-// });
-
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.key === "Escape" || evt.key === "Esc") {
-//     if (formSuccess.classList.contains("success--opened")) {
-//       formSuccess.classList.remove("success--opened");
-//     }
-//   }
-// });
-
-let telForm = document.querySelector("#phone");
-let numberLength = 10;
-
-telForm.addEventListener('input', () => {
-  const valueTelLength = telForm.value.length;
-
-  if (valueTelLength > numberLength) {
-    telForm.setCustomValidity(`Удалите лишние ${valueTelLength - numberLength} симв.`);
-  } else if (valueTelLength < numberLength) {
-    telForm.setCustomValidity(`Еще ${numberLength - valueTelLength} симв.`);
-  } else {
-    telForm.setCustomValidity('');
-  }
-  telForm.reportValidity();
-});
-
-// telForm.addEventListener('keyup', () => {
-//   const valueTel = telForm.value;
-
-//   console.log(valueTel);
-//   const valueTelLength = telForm.value.length;
-//   for (let i = 0; i < valueTelLength; i++) {
-//   if (typeof valueTel !== 'number') {
-//     console.log(1)
-//   }
+// for(let i = 0; i < sendButton.length; i++) {
+//   sendButton[i].addEventListener("click", function () {
+//     console.log(sendButton[i])
+//     formBuy.classList.remove("buy--opened");
+//     formBuyWrapper.classList.add("buy__wrapper--sended");
+//     formSuccess.classList.add("success--opened");
+//   });
 // }
-// })
+
+for(let i = 0; i < closeButton.length; i++) {
+  closeButton[i].addEventListener("click", function () {
+    formBuy.classList.remove("buy--opened");
+    formSuccess.classList.remove("success--opened");
+  });
+}
 
 let places = document.querySelectorAll(".places__link");
 let country = document.querySelectorAll(".country");

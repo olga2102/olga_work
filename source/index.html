@@ -7,6 +7,8 @@
   <title>HTML Academy: Путешествие по Европе</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="fonts/montserrat.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/montserratbold.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link href="fonts/montserratmedium.woff2" as="font" rel="preload" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -64,8 +66,8 @@
                 alt="Вид на греческую деревню на скале">
             </picture>
             <div class="places__inner">
-            <p class="places__item-text">Смотреть подробнее</p>
-          </div>
+              <p class="places__item-text">Смотреть подробнее</p>
+            </div>
             <p class="places__item-name">Греция</p>
           </a>
         </li>
@@ -126,24 +128,26 @@
       </ul>
     </section>
     <section class="tour" id="tour">
-      <div class="container">
-        <ul class="tour__list">
-          <li class="tour__item">
-            <a class="tour__link tour__link--current" href="#" data-country="greece">Греция</a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#" data-country="albania">Албания</a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#" data-country="macedonia">Македония</a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#" data-country="montenegro">Черногория</a>
-          </li>
-          <li class="tour__item">
-            <a class="tour__link" href="#" data-country="croatia">Хорватия</a>
-          </li>
-        </ul>
+      <div class="tour__wrapper">
+        <div class="container">
+          <ul class="tour__list">
+            <li class="tour__item">
+              <a class="tour__link tour__link--current" href="#" data-country="greece">Греция</a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="#" data-country="albania">Албания</a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="#" data-country="macedonia">Македония</a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="#" data-country="montenegro">Черногория</a>
+            </li>
+            <li class="tour__item">
+              <a class="tour__link" href="#" data-country="croatia">Хорватия</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="country country--greece country--current" data-country="greece">
         <div class="container">
@@ -333,7 +337,7 @@
               <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <a  class="offer-tariff__button button-buy" href="">купить тур сейчас</a>
+          <a class="offer-tariff__button button-buy" href="#">купить тур сейчас</a>
         </div>
         <div class="tariffs__wrapper offer-tariff">
           <div class="offer-tariff__wrapper">
@@ -373,52 +377,52 @@
               <p class="offer-tariff__advantage">Экскурсии по удивительно красивым местам Европы</p>
             </li>
           </ul>
-          <a class="offer-tariff__button button-buy" href="">купить тур сейчас</a>
+          <a class="offer-tariff__button button-buy" href="#">купить тур сейчас</a>
         </div>
       </div>
-      <div class="buy">
+      <div class="buy modal">
         <button class="buy__button close-button" arial-label="Закрыть форму"></button>
         <div class="buy__wrapper">
           <p class="buy__title">Купить тур</p>
-          <form class="buy__form form-buy">
-            <fieldset class="form-buy__fieldset">
-              <div class="form-buy__wrapper">
-                <label class="form-buy__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
-                <input class="form-buy__input form-buy__input--tel" type="tel" name="tel" id="tel"
-                  placeholder="+7 Введите 10 цифр номера" pattern="+7-[0-9]{3}-[0-9]{2}-[0*-9]{2}-[0*-9]{2}" required>
+          <!-- <form class="buy__form form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form__fieldset">
+              <div class="form__wrapper form__wrapper--buy">
+                <label class=" form__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
+                <input class="form__input form__input--tel" type="tel" name="tel" id="tel"
+                  placeholder="+7 Введите 10 цифр номера">
               </div>
-              <div class="form-buy__wrapper">
-                <label class="form-buy__label" for="email" aria-label="Поле для ввода электронной почты"></label>
-                <input class="form-buy__input form-buy__input--email" type="email" id="email" name="email"
-                  placeholder="E-mail" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+              <div class="form__wrapper form__wrapper--buy">
+                <label class="form__label" for="email" aria-label="Поле для ввода электронной почты"></label>
+                <input class="form__input form__input--email" type="email" id="email" name="email">
               </div>
             </fieldset>
-            <button class="form-buy__button" type="submit">Отправить</button>
-          </form>
+            <button class="form__button" type="submit">Отправить</button>
+          </form> -->
         </div>
+      </div>
+      <div class="success">
+        <button class="success__button close-button" arial-label="Закрыть форму"></button>
         <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
       </div>
-      <!-- <div class="success">
-        <button class="success__button close-button close-button--success" arial-label="Закрыть форму"></button>
-        <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
-      </div> -->
-     </section>
-    <section class="feedback">
+    </section>
+    <section class="feedback modal">
       <div class="container">
         <h2 class="visually-hidden">Обратная связь</h2>
         <div class="feedback__wrapper">
           <p class="feedback__question">У Вас остались вопросы?</p>
           <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <form class="feedback__form form">
-            <fieldset class="form-fieldset">
-              <div class="form-fieldset__wrapper">
-                <label class="form-fieldset__label" for="phone" aria-label="Поле для ввода номера телефона"></label>
-                <input class="form-fieldset__input" type="tel" name="tel" id="phone"
-                  placeholder="+7 Введите 10 цифр номера" pattern='[0-9]{10}'>
+          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form__fieldset form__fieldset--feedback">
+              <div class=" form__wrapper form__wrapper--feedback">
+                <p class="form__alert">Данные не верны</p>
+                <label class=" form__label" for="phone" aria-label="Поле для ввода номера телефона"></label>
+                <input class="form__input form__input--tel" type="tel" name="phone" id="phone"
+                  placeholder="+7 Введите 10 цифр номера" required>
               </div>
-              <div class="form-fieldset__wrapper">
-                <label class="form-fieldset__label" for="mail" aria-label="Поле для ввода электронной почты"></label>
-                <input class="form-fieldset__input" type="email" id="mail" name="email" placeholder="E-mail" required>
+              <div class="form__wrapper form__wrapper--feedback">
+                <p class="form__alert">Данные не верны</p>
+                <label class="form__label" for="mail" aria-label="Поле для ввода электронной почты"></label>
+                <input class="form__input form__input--email" type="email" id="mail" name="mail" placeholder="E-mail" required>
               </div>
             </fieldset>
             <button class="form__button" type="submit">Отправить</button>
@@ -477,7 +481,8 @@
         времяпрепровождением</p>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/form.js"></script>
 </body>
 
 </html>

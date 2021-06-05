@@ -63,6 +63,10 @@
     padding: 0;
     margin: 0;
   }
+
+  &--sended {
+    display: none;
+  }
 }
 
 .feedback__question {

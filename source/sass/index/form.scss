@@ -1,4 +1,44 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
 
+  &--feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 20px 0;
+
+    @media (max-width: $tablet-width) {
+      margin: 25px 0 20px 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      margin: 20px 0;
+    }
+  }
+}
+
+.form__wrapper {
+  position: relative;
+
+  &--buy {
+    margin-bottom: 20px;
+  }
+
+  &--feedback {
+    width: 48%;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
 
 .form__button {
   @include button-reset;
@@ -29,4 +69,39 @@
   &:hover {
     background-color: $hover-orange;
   }
+}
+
+.form__text {
+  display: none;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  margin-top: 180px;
+
+  &--sended {
+    display: block;
+  }
+}
+
+.form__input {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 15px 0 15px 10px;
+  width: 100%;
+  border: 1px solid $opacity-grey;
+
+  &:hover {
+    outline: 1px solid $orange;
+  }
+}
+
+.form__alert {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgb(254, 120, 101);
+  top: -20px;
+  margin: 0;
 }
