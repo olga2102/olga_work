@@ -47,10 +47,10 @@
         <h2 class="travel__title">Путешествие по Европе</h2>
         <p class="travel__intro">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
           также потрясающая красот природы.</p>
-        <a class="travel__link">смотреть тур</a>
+        <a class="travel__link" href="#places">смотреть тур</a>
       </div>
     </section>
-    <section class="places container">
+    <section class="places container" id="places">
       <div class="places__description">
         <h2 class="places__title">Места посещения</h2>
         <p class="places__intro">Вы можете выбрать полный тур или <br class="places__intro-break">частичный, с
@@ -384,25 +384,23 @@
         <button class="buy__button close-button" arial-label="Закрыть форму"></button>
         <div class="buy__wrapper">
           <p class="buy__title">Купить тур</p>
-          <!-- <form class="buy__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="buy__form form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="form__fieldset">
               <div class="form__wrapper form__wrapper--buy">
+                <p class="form__alert">Данные не верны</p>
                 <label class=" form__label" for="tel" aria-label="Поле для ввода номера телефона"></label>
                 <input class="form__input form__input--tel" type="tel" name="tel" id="tel"
                   placeholder="+7 Введите 10 цифр номера">
               </div>
               <div class="form__wrapper form__wrapper--buy">
+                <p class="form__alert">Данные не верны</p>
                 <label class="form__label" for="email" aria-label="Поле для ввода электронной почты"></label>
-                <input class="form__input form__input--email" type="email" id="email" name="email">
+                <input class="form__input form__input--email" type="email" id="mail" name="mail" placeholder="E-mail" required>
               </div>
             </fieldset>
             <button class="form__button" type="submit">Отправить</button>
-          </form> -->
+          </form>
         </div>
-      </div>
-      <div class="success">
-        <button class="success__button close-button" arial-label="Закрыть форму"></button>
-        <p class="success__text">Форма успешно отправлена, спасибо! :)</p>
       </div>
     </section>
     <section class="feedback modal">
@@ -417,7 +415,7 @@
                 <p class="form__alert">Данные не верны</p>
                 <label class=" form__label" for="phone" aria-label="Поле для ввода номера телефона"></label>
                 <input class="form__input form__input--tel" type="tel" name="phone" id="phone"
-                  placeholder="+7 Введите 10 цифр номера" required>
+                  placeholder="+7 Введите 10 цифр номера" min-length="10" required>
               </div>
               <div class="form__wrapper form__wrapper--feedback">
                 <p class="form__alert">Данные не верны</p>
@@ -465,7 +463,6 @@
           <use xlink:href="img/sprite.svg#mail"></use>
         </svg>
         <span class="page-footer__mail page-footer__mail--address">puteshestviemechta@gmail.ru</span>
-        <!-- <span class="page-footer__mail page-footer__mail--word">Почта</span> -->
       </a>
       <a class="contacts__link contacts__link--tel" href="tel:+749978468446">
         <svg class="page-footer__pic" width="30" height="30">
@@ -481,8 +478,14 @@
         времяпрепровождением</p>
     </div>
   </footer>
-  <!-- <script src="js/script.js"></script> -->
+  <div class="modal-success">
+    <button class="modal-success__button close-button" arial-label="Закрыть форму"></button>
+    <p class="modal-success__text">Форма успешно отправлена, спасибо! :)</p>
+  </div>
+  <script src="js/menu.js"></script>
   <script src="js/form.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/buy-tour.js"></script>
+  <script src="js/close-button.js"></script>
 </body>
-
 </html>

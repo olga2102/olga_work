@@ -1,6 +1,6 @@
 .buy {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 728px;
   min-height: 444px;
   background-color: $light-pink;
@@ -8,6 +8,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 
   &::before {
     position: absolute;
